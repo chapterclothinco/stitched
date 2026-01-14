@@ -112,14 +112,34 @@ function initSmoothScroll() {
             e.preventDefault();
 
             const offset = 100;
-            const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
 
-            window.scrollTo({
-                top: top,
-                behavior: 'smooth'
-            });
+            smoothScrollTo(targetPosition, 1200);
         });
     });
+}
+
+function smoothScrollTo(targetPosition, duration) {
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    let startTime = null;
+
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+
+        // Ease out cubic for smooth deceleration
+        const easeOutCubic = 1 - Math.pow(1 - progress, 3);
+
+        window.scrollTo(0, startPosition + distance * easeOutCubic);
+
+        if (timeElapsed < duration) {
+            requestAnimationFrame(animation);
+        }
+    }
+
+    requestAnimationFrame(animation);
 }
 
 // ================================
