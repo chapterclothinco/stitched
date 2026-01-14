@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Stitched - Custom Apparel for Moments That Matter</title>
+    <meta name="description" content="Start your custom apparel project with Stitched. Tell us about your event and we'll bring your vision to life.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Stitched</span>
+            </a>
+            <div class="nav-links">
+                <a href="brands.html">Brands</a>
+                <a href="about.html">About</a>
+                <a href="process.html">Process</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn-nav">Get Started</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-links">
+            <a href="brands.html">Brands</a>
+            <a href="about.html">About</a>
+            <a href="process.html">Process</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="mobile-cta">Get Started</a>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-tag">Contact</span>
+            <h1 class="page-title">Let's Create Something <em>Worth Keeping</em></h1>
+            <p class="page-subtitle">Tell us about your moment, and we'll bring it to life.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" placeholder="John Smith" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="brand">Brand Interest</label>
+                                <select id="brand" name="brand">
+                                    <option value="">Select a Brand</option>
+                                    <option value="celebration-collective">Celebration Collective</option>
+                                    <option value="mitzvah-studio">The Mitzvah Studio</option>
+                                    <option value="altar-atelier">Altar Atelier</option>
+                                    <option value="sewcorporate">SewCorporate</option>
+                                    <option value="member-threads">Member Threads</option>
+                                    <option value="not-sure">Not Sure - Help Me Choose</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="event-type">Event Type</label>
+                                <select id="event-type" name="event-type">
+                                    <option value="">Select Event Type</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="corporate">Corporate Event</option>
+                                    <option value="birthday">Birthday/Celebration</option>
+                                    <option value="bar-bat-mitzvah">Bar/Bat Mitzvah</option>
+                                    <option value="reunion">Reunion</option>
+                                    <option value="team-group">Team/Group Order</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="quantity">Estimated Quantity</label>
+                                <input type="number" id="quantity" name="quantity" placeholder="e.g., 25" min="1">
+                            </div>
+                            <div class="form-group">
+                                <label for="event-date">Event Date</label>
+                                <input type="date" id="event-date" name="event-date">
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Tell us about your vision</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Share details about your event, style preferences, and any specific ideas you have in mind..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large full-width">Start Your Project</button>
+                        <p class="form-note">We typically respond within 24 hours.</p>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>Quick Contact</h3>
+                        <div class="info-item">
+                            <span class="info-label">Email</span>
+                            <a href="mailto:hello@gostitched.com" class="info-value">hello@gostitched.com</a>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Response Time</span>
+                            <span class="info-value">Within 24 hours</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Hours</span>
+                            <span class="info-value">Mon-Fri, 9am-6pm EST</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Quick Answers</h3>
+                        <div class="quick-faq">
+                            <div class="quick-faq-item">
+                                <h4>How quickly will I hear back?</h4>
+                                <p>We typically respond within 24 hours during business days.</p>
+                            </div>
+                            <div class="quick-faq-item">
+                                <h4>What information should I have ready?</h4>
+                                <p>Event date, estimated quantity, and any design ideas or inspiration you have.</p>
+                            </div>
+                            <div class="quick-faq-item">
+                                <h4>What if I'm not sure which brand I need?</h4>
+                                <p>No problem! Select "Not Sure" and we'll help guide you to the right fit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">Stitched</span>
+                    </a>
+                    <p class="footer-tagline">Custom apparel for moments that matter.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Brands</h4>
+                        <a href="brands/celebration-collective.html">Celebration Collective</a>
+                        <a href="brands/mitzvah-studio.html">The Mitzvah Studio</a>
+                        <a href="brands/altar-atelier.html">Altar Atelier</a>
+                        <a href="brands/sewcorporate.html">SewCorporate</a>
+                        <a href="brands/member-threads.html">Member Threads</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="about.html">About</a>
+                        <a href="process.html">Process</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Stitched Group LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
