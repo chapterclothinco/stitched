@@ -1735,6 +1735,10 @@ a.info-value:hover {
     .trust-stats-grid {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .trust-stats-grid.trust-stats-three {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .trust-stat {
