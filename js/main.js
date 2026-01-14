@@ -348,7 +348,7 @@ function initScrollAnimations() {
 // Parallax Effect
 // ================================
 function initParallax() {
-    const parallaxElements = document.querySelectorAll('.hero-visual, .section-tag');
+    const parallaxElements = document.querySelectorAll('.hero-visual');
 
     let ticking = false;
 
