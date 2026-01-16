@@ -905,6 +905,168 @@ h1, h2, h3 {
 }
 
 /* ================================
+   Inspiration Gallery Section
+   ================================ */
+.inspiration {
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
+    background: var(--ivory);
+}
+
+.inspiration-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+@media (min-width: 768px) {
+    .inspiration-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 200px);
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .inspiration-grid {
+        grid-template-rows: repeat(2, 220px);
+    }
+}
+
+.inspiration-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--blush) 0%, var(--champagne) 50%, var(--rose-gold-bg) 100%);
+    border: 1px solid var(--gray-200);
+    transition: all 0.4s var(--ease);
+    cursor: pointer;
+    min-height: 160px;
+}
+
+@media (min-width: 768px) {
+    .inspiration-item {
+        min-height: auto;
+    }
+
+    .inspiration-item--tall {
+        grid-row: span 2;
+    }
+
+    .inspiration-item--wide {
+        grid-column: span 2;
+    }
+}
+
+.inspiration-item:hover {
+    border-color: var(--rose-gold);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(183, 110, 121, 0.15);
+}
+
+.inspiration-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(26, 26, 26, 0.6) 100%);
+    opacity: 0;
+    transition: opacity 0.4s var(--ease);
+    z-index: 1;
+}
+
+.inspiration-item:hover::before {
+    opacity: 1;
+}
+
+.inspiration-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 24px;
+    text-align: center;
+}
+
+.inspiration-placeholder svg {
+    width: 48px;
+    height: 48px;
+    stroke: var(--rose-gold);
+    stroke-width: 1;
+    fill: none;
+    opacity: 0.3;
+    transition: all 0.3s var(--ease);
+}
+
+.inspiration-item:hover .inspiration-placeholder svg {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.inspiration-placeholder span {
+    font-family: var(--font-serif);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--gray-600);
+    transition: all 0.3s var(--ease);
+    position: relative;
+    z-index: 2;
+}
+
+.inspiration-item:hover .inspiration-placeholder span {
+    color: var(--white);
+}
+
+/* When real images are added */
+.inspiration-item img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s var(--ease);
+}
+
+.inspiration-item:hover img {
+    transform: scale(1.05);
+}
+
+.inspiration-item .inspiration-label {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-family: var(--font-serif);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s var(--ease);
+    z-index: 2;
+}
+
+.inspiration-item:hover .inspiration-label {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.inspiration-cta {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.inspiration-cta p {
+    font-size: 17px;
+    color: var(--gray-500);
+    margin-bottom: 20px;
+}
+
+/* ================================
    FAQ Section - Tighter
    ================================ */
 .faq-home-section {
