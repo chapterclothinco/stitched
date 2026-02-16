@@ -1,5 +1,36 @@
 'use client';
 
+import CustomSelect from './CustomSelect';
+import DatePicker from './DatePicker';
+
+const brandOptions = [
+  { value: 'celebration-collective', label: 'Celebration Collective' },
+  { value: 'mitzvah-studio', label: 'The Mitzvah Studio' },
+  { value: 'altar-atelier', label: 'Altar Atelier' },
+  { value: 'sewcorporate', label: 'SewCorporate' },
+  { value: 'member-threads', label: 'Member Threads' },
+  { value: 'not-sure', label: 'Not Sure - Help Me Choose' },
+];
+
+const eventTypeOptions = [
+  { value: 'wedding', label: 'Wedding' },
+  { value: 'corporate', label: 'Corporate Event' },
+  { value: 'birthday', label: 'Birthday/Celebration' },
+  { value: 'bar-bat-mitzvah', label: 'Bar/Bat Mitzvah' },
+  { value: 'reunion', label: 'Reunion' },
+  { value: 'team-group', label: 'Team/Group Order' },
+  { value: 'other', label: 'Other' },
+];
+
+const budgetOptions = [
+  { value: 'under-2k', label: 'Under $2,000' },
+  { value: '2k-5k', label: '$2,000 - $5,000' },
+  { value: '5k-10k', label: '$5,000 - $10,000' },
+  { value: '10k-25k', label: '$10,000 - $25,000' },
+  { value: '25k-plus', label: '$25,000+' },
+  { value: 'not-sure', label: 'Not Sure Yet' },
+];
+
 export default function ContactForm() {
   return (
     <form className="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
@@ -16,28 +47,11 @@ export default function ContactForm() {
       <div className="form-row">
         <div className="form-group">
           <label htmlFor="brand">Brand Interest</label>
-          <select id="brand" name="brand" defaultValue="">
-            <option value="">Select a Brand</option>
-            <option value="celebration-collective">Celebration Collective</option>
-            <option value="mitzvah-studio">The Mitzvah Studio</option>
-            <option value="altar-atelier">Altar Atelier</option>
-            <option value="sewcorporate">SewCorporate</option>
-            <option value="member-threads">Member Threads</option>
-            <option value="not-sure">Not Sure - Help Me Choose</option>
-          </select>
+          <CustomSelect id="brand" name="brand" options={brandOptions} placeholder="Select a Brand" />
         </div>
         <div className="form-group">
           <label htmlFor="event-type">Event Type</label>
-          <select id="event-type" name="event-type" defaultValue="">
-            <option value="">Select Event Type</option>
-            <option value="wedding">Wedding</option>
-            <option value="corporate">Corporate Event</option>
-            <option value="birthday">Birthday/Celebration</option>
-            <option value="bar-bat-mitzvah">Bar/Bat Mitzvah</option>
-            <option value="reunion">Reunion</option>
-            <option value="team-group">Team/Group Order</option>
-            <option value="other">Other</option>
-          </select>
+          <CustomSelect id="event-type" name="event-type" options={eventTypeOptions} placeholder="Select Event Type" />
         </div>
       </div>
       <div className="form-row">
@@ -47,21 +61,13 @@ export default function ContactForm() {
         </div>
         <div className="form-group">
           <label htmlFor="event-date">Event Date</label>
-          <input type="date" id="event-date" name="event-date" />
+          <DatePicker id="event-date" name="event-date" />
         </div>
       </div>
       <div className="form-row">
         <div className="form-group">
           <label htmlFor="budget">Budget Range</label>
-          <select id="budget" name="budget" defaultValue="">
-            <option value="">Select Budget Range</option>
-            <option value="under-2k">Under $2,000</option>
-            <option value="2k-5k">$2,000 - $5,000</option>
-            <option value="5k-10k">$5,000 - $10,000</option>
-            <option value="10k-25k">$10,000 - $25,000</option>
-            <option value="25k-plus">$25,000+</option>
-            <option value="not-sure">Not Sure Yet</option>
-          </select>
+          <CustomSelect id="budget" name="budget" options={budgetOptions} placeholder="Select Budget Range" />
         </div>
       </div>
       <div className="form-group full-width">
