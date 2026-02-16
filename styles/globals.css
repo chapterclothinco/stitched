@@ -25,7 +25,10 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
 body {
     font-family: var(--font-sans);
     background: var(--white);
@@ -575,17 +578,29 @@ em {
 }
 
 .brands-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 16px;
+    justify-content: center;
+}
+
+.brands-grid .brand-card {
+    flex: 1 1 100%;
+    max-width: 100%;
 }
 
 @media (min-width: 640px) {
-    .brands-grid { grid-template-columns: repeat(2, 1fr); }
+    .brands-grid .brand-card {
+        flex: 1 1 calc(50% - 8px);
+        max-width: calc(50% - 8px);
+    }
 }
 
 @media (min-width: 1024px) {
-    .brands-grid { grid-template-columns: repeat(3, 1fr); }
+    .brands-grid .brand-card {
+        flex: 0 1 calc(33.333% - 11px);
+        max-width: calc(33.333% - 11px);
+    }
 }
 
 .brand-card {

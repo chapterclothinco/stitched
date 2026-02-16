@@ -2,7 +2,6 @@ import { Inter, Playfair_Display } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollAnimations from '@/components/ScrollAnimations';
-import SmoothScroll from '@/components/SmoothScroll';
 import '@/styles/globals.css';
 
 const inter = Inter({
@@ -50,7 +49,6 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <ScrollAnimations />
-        <SmoothScroll />
       </body>
     </html>
   );
