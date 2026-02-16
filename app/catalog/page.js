@@ -10,7 +10,7 @@ export default function CatalogPage() {
     <>
       <section className="page-hero">
         <div className="container">
-          <span className="section-tag">Our Work</span>
+          <span className="overline">Our Work</span>
           <h1 className="page-title">What We Can <em>Create</em></h1>
           <p className="page-subtitle">Every piece below was designed from scratch for a specific client. Your project will be just as unique. This is just a taste of what&apos;s possible.</p>
         </div>

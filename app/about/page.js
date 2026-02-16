@@ -10,7 +10,7 @@ export default function AboutPage() {
     <>
       <section className="page-hero">
         <div className="container">
-          <span className="section-tag">About Us</span>
+          <span className="overline">About Us</span>
           <h1 className="page-title">The Story Behind <em>Stitched</em></h1>
           <p className="page-subtitle">A design-led manufacturing group creating premium custom apparel for life&apos;s most meaningful moments.</p>
         </div>
@@ -33,7 +33,7 @@ export default function AboutPage() {
       <section className="values-section">
         <div className="container">
           <div className="section-header center">
-            <span className="section-tag">Our Philosophy</span>
+            <span className="overline">Our Philosophy</span>
             <h2 className="section-title">What We <em>Believe</em></h2>
           </div>
           <div className="values-grid">
@@ -55,11 +55,10 @@ export default function AboutPage() {
       <section className="stats-section">
         <div className="container">
           <div className="section-header center">
-            <span className="section-tag">Who We Are</span>
+            <span className="overline">Who We Are</span>
             <h2 className="section-title">Our <em>Foundation</em></h2>
           </div>
           <div className="stats-grid">
-            <div className="stat-item"><span className="stat-number">2026</span><span className="stat-label">Founded</span></div>
             <div className="stat-item"><span className="stat-number">5</span><span className="stat-label">Specialized Brands</span></div>
             <div className="stat-item"><span className="stat-number">100%</span><span className="stat-label">Custom, Cut-and-Sew</span></div>
             <div className="stat-item"><span className="stat-number">0</span><span className="stat-label">Generic Blanks</span></div>

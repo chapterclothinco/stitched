@@ -212,7 +212,7 @@ export default async function BrandPage({ params }) {
       {/* Brand Hero */}
       <section className="page-hero brand-hero">
         <div className="container">
-          <span className="section-tag">{brand.tag}</span>
+          <span className="overline">{brand.tag}</span>
           {brand.logo ? (
             <Image src={brand.logo} alt="" className={`brand-logo ${brand.logoClassName || ''}`} width={200} height={200} />
           ) : brand.logoEmoji ? (
@@ -233,7 +233,7 @@ export default async function BrandPage({ params }) {
       <section className="perfect-for-section">
         <div className="container">
           <div className="section-header center">
-            <span className="section-tag">Perfect For</span>
+            <span className="overline">Perfect For</span>
             <h2 className="section-title">Designed for Your <em>Moment</em></h2>
           </div>
           <div className="perfect-for-grid">
@@ -251,7 +251,7 @@ export default async function BrandPage({ params }) {
       <section className="brand-catalog-section">
         <div className="container">
           <div className="section-header center">
-            <span className="section-tag">Collection</span>
+            <span className="overline">Collection</span>
             <h2 className="section-title">Explore the <em>Collection</em></h2>
           </div>
           <BrandCatalog brandSlug={slug} categories={brand.categories} />
@@ -262,7 +262,7 @@ export default async function BrandPage({ params }) {
       <section className="brand-approach-section">
         <div className="container">
           <div className="brand-approach-content">
-            <span className="section-tag">{brand.approach.tag}</span>
+            <span className="overline">{brand.approach.tag}</span>
             <h2 className="section-title">{brand.approach.title}</h2>
             <p className="approach-lead">{brand.approach.lead}</p>
             <p className="approach-body">{brand.approach.body}</p>

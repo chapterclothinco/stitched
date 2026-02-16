@@ -2,170 +2,136 @@ import Link from 'next/link';
 import Image from 'next/image';
 import TypingEffect from '@/components/TypingEffect';
 
-
 export default function HomePage() {
   return (
     <>
-      {/* Hero Section */}
+      {/* Hero */}
       <section className="hero">
-        <div className="hero-container">
-          <div className="hero-content">
-            <p className="hero-eyebrow">Stitched Group</p>
+        <div className="container">
+          <div className="hero-centered">
             <h1 className="hero-title">
               <span className="title-line">Custom Apparel for</span>
               <span className="title-line"><TypingEffect /><span className="cursor">|</span></span>
             </h1>
             <p className="hero-description">
-              Not decorated blanks. Not templates. Everything we make is designed and manufactured from scratch — premium materials, modern fits, built for moments that matter.
+              Designed and manufactured from scratch. Premium materials, modern fits, built for moments that matter.
             </p>
             <div className="hero-buttons">
-              <a href="#brands" className="btn btn-primary">Explore Our Brands</a>
-              <a href="#process" className="btn btn-secondary">See Our Process</a>
-            </div>
-          </div>
-          <div className="hero-visual">
-            <div className="hero-gallery">
-              <div className="gallery-item gallery-item-large">
-                <div className="gallery-placeholder">
-                  <span className="placeholder-icon">👗</span>
-                  <span className="placeholder-text">Custom Apparel</span>
-                </div>
-              </div>
-              <div className="gallery-item">
-                <div className="gallery-placeholder">
-                  <span className="placeholder-icon">✂️</span>
-                  <span className="placeholder-text">Cut & Sew</span>
-                </div>
-              </div>
-              <div className="gallery-item">
-                <div className="gallery-placeholder">
-                  <span className="placeholder-icon">🎨</span>
-                  <span className="placeholder-text">Custom Design</span>
-                </div>
-              </div>
+              <Link href="/contact" className="btn btn-primary">Start a Project</Link>
+              <a href="#brands" className="btn btn-ghost">Explore Brands</a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Philosophy Section */}
+      {/* Philosophy */}
       <section className="philosophy" id="about">
         <div className="container">
-          <div className="philosophy-layout">
-            <div className="philosophy-header">
-              <span className="section-tag">Our Philosophy</span>
-              <h2 className="section-title">The Stitched <em>Standard</em></h2>
-            </div>
-            <div className="philosophy-content">
-              <p className="philosophy-lead">
-                Most custom apparel is generic, clunky, and forgettable. We built Stitched to change that.
-              </p>
-              <p className="philosophy-body">
-                Every piece we create is fully custom — no blank templates, no compromises. Premium materials. Modern fits. A real design process that treats your moment with the intention it deserves.
-              </p>
-            </div>
+          <div className="philosophy-centered">
+            <p className="overline">Our Philosophy</p>
+            <h2 className="headline-lg">We don&apos;t do <em>one-size-fits-all.</em></h2>
+            <p className="body-lg">
+              Every piece is fully custom — designed from raw fabric to finished garment. No blank templates. No screen printing on generic tees. A real design process that treats your moment with the intention it deserves.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Pillars Section */}
+      {/* Pillars */}
       <section className="pillars">
         <div className="container">
           <div className="pillars-grid">
             <div className="pillar-card">
               <span className="pillar-number">01</span>
               <h3 className="pillar-title">Moments Matter</h3>
+              <p className="pillar-description">Every celebration is unique. Your apparel should be too.</p>
             </div>
             <div className="pillar-card">
               <span className="pillar-number">02</span>
               <h3 className="pillar-title">Specialization Over Generalization</h3>
+              <p className="pillar-description">Five dedicated brands, each built for a specific type of moment.</p>
             </div>
             <div className="pillar-card">
               <span className="pillar-number">03</span>
               <h3 className="pillar-title">Premium Without Pretension</h3>
+              <p className="pillar-description">Factory-direct quality at prices that make sense.</p>
             </div>
-          </div>
-          <div style={{ textAlign: 'center', marginTop: 24 }}>
-            <Link href="/about" className="btn btn-secondary">Learn More About Our Philosophy</Link>
           </div>
         </div>
       </section>
 
-      {/* Brands Section */}
+      {/* Brands */}
       <section className="brands" id="brands">
         <div className="container">
-          <div className="section-header">
-            <span className="section-tag">Our Brands</span>
-            <h2 className="section-title">One Vision. Five Specialized <em>Brands</em></h2>
-            <p className="section-description">
-              We don&apos;t believe in one-size-fits-all. That&apos;s why we&apos;ve built distinct brands — each with its own identity, expertise, and design sensibility — all powered by the same world-class infrastructure.
+          <div className="section-header center">
+            <p className="overline">Our Brands</p>
+            <h2 className="headline-lg">Five brands. One <em>standard.</em></h2>
+            <p className="section-subtitle">
+              Each brand has its own identity, expertise, and design sensibility — all powered by the same world-class manufacturing.
             </p>
-          </div>
-
-          <div className="not-sure-banner">
-            <h3>Not sure which brand fits your event?</h3>
-            <p>No problem — tell us about your moment and we&apos;ll match you with the right brand in under 2 minutes.</p>
-            <Link href="/contact?brand=not-sure" className="btn btn-primary">Help Me Choose</Link>
           </div>
 
           <div className="brands-grid">
             <Link href="/brands/celebration-collective" className="brand-card">
-              <div className="brand-card-placeholder-logo">🎉</div>
               <div className="brand-card-content">
                 <h3 className="brand-name">Celebration Collective</h3>
-                <p className="brand-tagline">Birthday vibes? Bach trip energy? Reunion swagger? We design the pieces your crew will actually want to wear — and keep forever.</p>
-                <span className="brand-cta">Explore →</span>
+                <p className="brand-tagline">Birthday vibes, bach trip energy, reunion swagger — pieces your crew will actually want to wear.</p>
+                <span className="brand-cta">Explore &rarr;</span>
               </div>
             </Link>
             <Link href="/brands/mitzvah-studio" className="brand-card">
               <Image src="/assets/Logos/MitzvahStudio.svg" alt="" className="brand-logo" width={200} height={200} />
               <div className="brand-card-content">
                 <h3 className="brand-name">The Mitzvah Studio</h3>
-                <p className="brand-tagline">Honoring tradition while feeling fresh. Custom pieces designed to celebrate this once-in-a-lifetime moment with intention and style.</p>
-                <span className="brand-cta">Explore →</span>
+                <p className="brand-tagline">Honoring tradition while feeling fresh. Custom pieces for this once-in-a-lifetime moment.</p>
+                <span className="brand-cta">Explore &rarr;</span>
               </div>
             </Link>
             <Link href="/brands/altar-atelier" className="brand-card">
               <Image src="/assets/Logos/AltarAtelier.svg" alt="" className="brand-logo" width={200} height={200} />
               <div className="brand-card-content">
                 <h3 className="brand-name">Altar Atelier</h3>
-                <p className="brand-tagline">Your wedding party deserves more than matching t-shirts from a big-box store. Bespoke pieces designed around your wedding&apos;s unique aesthetic.</p>
-                <span className="brand-cta">Explore →</span>
+                <p className="brand-tagline">Your wedding party deserves more than matching t-shirts from a big-box store.</p>
+                <span className="brand-cta">Explore &rarr;</span>
               </div>
             </Link>
             <Link href="/brands/sewcorporate" className="brand-card">
               <Image src="/assets/Logos/SewCorporate.svg" alt="" className="brand-logo" width={200} height={200} />
               <div className="brand-card-content">
                 <h3 className="brand-name">SewCorporate</h3>
-                <p className="brand-tagline">Custom branded apparel that your team actually wants to wear. Built for companies who care about quality, culture, and looking sharp.</p>
-                <span className="brand-cta">Explore →</span>
+                <p className="brand-tagline">Custom branded apparel that your team actually wants to wear. Built for quality and culture.</p>
+                <span className="brand-cta">Explore &rarr;</span>
               </div>
             </Link>
             <Link href="/brands/member-threads" className="brand-card">
               <Image src="/assets/Logos/MemberThreads.svg" alt="" className="brand-logo brand-logo-member-threads" width={200} height={200} />
               <div className="brand-card-content">
                 <h3 className="brand-name">Member Threads</h3>
-                <p className="brand-tagline">Membership gear that builds belonging. Custom apparel for clubs, organizations, and communities who want to wear their identity with pride.</p>
-                <span className="brand-cta">Explore →</span>
+                <p className="brand-tagline">Membership gear that builds belonging. For clubs, organizations, and communities.</p>
+                <span className="brand-cta">Explore &rarr;</span>
               </div>
             </Link>
+          </div>
+
+          <div className="brands-help">
+            <p>Not sure which brand? <Link href="/contact?brand=not-sure">We&apos;ll help you choose &rarr;</Link></p>
           </div>
         </div>
       </section>
 
-      {/* Process Section */}
+      {/* Process */}
       <section className="process" id="process">
         <div className="container">
-          <div className="section-header">
-            <span className="section-tag">Our Process</span>
-            <h2 className="section-title">How We <em>Work</em></h2>
+          <div className="section-header center">
+            <p className="overline">Our Process</p>
+            <h2 className="headline-lg">How it <em>works.</em></h2>
           </div>
           <div className="process-grid">
             {[
               { num: '01', title: 'Discovery', desc: 'Tell us about your moment, your group, and your vision. We listen before we design.' },
-              { num: '02', title: 'Design', desc: 'Our team creates fully custom concepts — not templates with your logo slapped on. Real design for real moments.' },
-              { num: '03', title: 'Production', desc: 'Premium materials, modern fits, meticulous quality control. Every piece is made to keep, not toss.' },
-              { num: '04', title: 'Delivery', desc: 'Seamless logistics whether you\'re ordering 12 pieces or 1,200. We scale without sacrificing quality.' },
+              { num: '02', title: 'Design', desc: 'Our team creates fully custom concepts — not templates with your logo slapped on.' },
+              { num: '03', title: 'Production', desc: 'Premium materials, modern fits, meticulous quality control. Every piece is made to keep.' },
+              { num: '04', title: 'Delivery', desc: 'Seamless logistics whether you\'re ordering 12 pieces or 1,200.' },
             ].map(s => (
               <div key={s.num} className="process-step">
                 <span className="step-number">{s.num}</span>
@@ -177,22 +143,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Differentiators Section */}
+      {/* What Sets Us Apart */}
       <section className="differentiators">
         <div className="container">
           <div className="diff-layout">
             <div className="diff-header">
-              <h2 className="section-title">What Sets Us <em>Apart</em></h2>
+              <p className="overline">Why Stitched</p>
+              <h2 className="section-title">What sets us <em>apart.</em></h2>
             </div>
             <div className="diff-list">
               {[
                 { title: 'Cut-and-Sew Manufacturing', text: 'We don\'t print on blanks. Every garment is built from raw fabric to finished piece.' },
-                { title: '5 Specialized Brands', text: 'Your wedding deserves a different designer than your corporate retreat. That\'s why we built separate brands for each type of moment.' },
+                { title: '5 Specialized Brands', text: 'Your wedding deserves a different designer than your corporate retreat.' },
                 { title: 'Your Own Designer', text: 'No template pickers. A real designer creates custom concepts for your specific event.' },
                 { title: 'Factory-Direct Pricing', text: 'We own the manufacturing process, so you get premium quality without the luxury markup.' },
               ].map(d => (
                 <div key={d.title} className="diff-item">
-                  <span className="diff-icon">✓</span>
                   <div className="diff-text-group">
                     <strong>{d.title}</strong>
                     <span className="diff-text">{d.text}</span>
@@ -208,72 +174,46 @@ export default function HomePage() {
       <section className="founder-quote">
         <div className="container">
           <div className="founder-quote-content">
-            <h2 className="section-title">Why We Built <em>Stitched</em></h2>
             <blockquote>
-              &ldquo;The custom apparel industry treats every event the same. A wedding party gets the same cookie-cutter experience as a corporate retreat. We built Stitched to change that — five specialized brands, each designed to make your specific moment unforgettable.&rdquo;
+              &ldquo;The custom apparel industry treats every event the same. We built Stitched to change that — five specialized brands, each designed to make your specific moment unforgettable.&rdquo;
             </blockquote>
-            <p className="attribution">— Ethan Scher, Founder</p>
+            <p className="attribution">Ethan Scher, Founder</p>
           </div>
         </div>
       </section>
 
-      {/* Trust Stats */}
-      <section className="trust-stats">
-        <div className="container">
-          <div className="trust-stats-grid trust-stats-three">
-            <div className="trust-stat"><span className="trust-number">5</span><span className="trust-label">Specialized Brands</span></div>
-            <div className="trust-stat"><span className="trust-number">100%</span><span className="trust-label">Cut-and-Sew Manufacturing</span></div>
-            <div className="trust-stat"><span className="trust-number">8+</span><span className="trust-label">Piece Minimum</span></div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Banner */}
-      <section className="coming-soon-projects">
-        <div className="container">
-          <div className="coming-soon-content">
-            <h2 className="section-title">Your Moment Deserves <em>Better</em></h2>
-            <p>Whether it&apos;s a wedding, celebration, or corporate event — we design and manufacture custom apparel from scratch, so your group looks and feels incredible.</p>
-            <Link href="/contact" className="btn btn-primary btn-large">Start Your Project</Link>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
+      {/* FAQ */}
       <section className="faq-home-section">
         <div className="container">
           <div className="section-header center">
-            <span className="section-tag">Common Questions</span>
-            <h2 className="section-title">Frequently Asked <em>Questions</em></h2>
+            <p className="overline">FAQ</p>
+            <h2 className="section-title">Common <em>questions.</em></h2>
           </div>
           <div className="faq-home-grid">
             <div className="faq-home-item">
               <h4>What&apos;s the minimum order?</h4>
-              <p>Minimums vary by brand, starting at just 8 pieces for weddings and 12 for celebrations. Corporate orders start at 25.</p>
+              <p>Starting at 8 pieces for weddings and 12 for celebrations. Corporate orders start at 25.</p>
             </div>
             <div className="faq-home-item">
               <h4>How far in advance should I order?</h4>
-              <p>We recommend 6-8 weeks for most projects. Rush orders (4 weeks) are available for an additional fee.</p>
+              <p>We recommend 6-8 weeks for most projects. Rush orders (4 weeks) are available.</p>
             </div>
             <div className="faq-home-item">
-              <h4>What makes you different from other custom apparel?</h4>
+              <h4>What makes you different?</h4>
               <p>Everything is cut-and-sew manufactured from scratch — not printed on generic blanks. Premium materials, modern fits, real design.</p>
             </div>
-          </div>
-          <div style={{ textAlign: 'center' }}>
-            <Link href="/process#faq" className="btn btn-secondary">See All FAQs</Link>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA */}
       <section className="cta-section" id="contact">
         <div className="container">
           <div className="cta-content">
             <h2 className="cta-title">Ready to create something <em>worth keeping?</em></h2>
-            <p className="cta-description">Find the brand that fits your moment.</p>
-            <Link href="/contact" className="btn btn-primary btn-large">Start Your Project</Link>
-            <p className="cta-email">or email us at <a href="mailto:hello@gostitched.com">hello@gostitched.com</a></p>
+            <p className="cta-description">Tell us about your moment.</p>
+            <Link href="/contact" className="btn btn-primary btn-large btn-white">Start Your Project</Link>
+            <p className="cta-email">or email <a href="mailto:hello@gostitched.com">hello@gostitched.com</a></p>
           </div>
         </div>
       </section>

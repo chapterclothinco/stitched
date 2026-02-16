@@ -11,7 +11,7 @@ export default function ContactPage() {
     <>
       <section className="page-hero">
         <div className="container">
-          <span className="section-tag">Contact</span>
+          <span className="overline">Contact</span>
           <h1 className="page-title">Let&apos;s Create Something <em>Worth Keeping</em></h1>
           <p className="page-subtitle">Tell us about your moment, and we&apos;ll bring it to life.</p>
         </div>

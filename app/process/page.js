@@ -10,7 +10,7 @@ export default function ProcessPage() {
     <>
       <section className="page-hero">
         <div className="container">
-          <span className="section-tag">Our Process</span>
+          <span className="overline">Our Process</span>
           <h1 className="page-title">From Concept to <em>Creation</em></h1>
           <p className="page-subtitle">Every piece is crafted with intention, from initial design through final delivery.</p>
         </div>
@@ -156,7 +156,7 @@ export default function ProcessPage() {
       <section className="faq-section" id="faq">
         <div className="container">
           <div className="section-header center">
-            <span className="section-tag">FAQ</span>
+            <span className="overline">FAQ</span>
             <h2 className="section-title">Common <em>Questions</em></h2>
           </div>
           <div className="faq-grid">

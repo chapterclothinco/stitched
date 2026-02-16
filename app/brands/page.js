@@ -10,7 +10,7 @@ export default function BrandsPage() {
     <>
       <section className="page-hero">
         <div className="container">
-          <span className="section-tag">Our Brands</span>
+          <span className="overline">Our Brands</span>
           <h1 className="page-title">One Vision. Five Specialized <em>Brands</em></h1>
           <p className="page-subtitle">Each moment deserves its own approach. Find the brand that fits yours.</p>
         </div>
