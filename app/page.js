@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import TypingEffect from '@/components/TypingEffect';
-import ParallaxHero from '@/components/ParallaxHero';
+
 
 export default function HomePage() {
   return (
@@ -23,11 +23,13 @@ export default function HomePage() {
               <a href="#process" className="btn btn-secondary">See Our Process</a>
             </div>
           </div>
-          <ParallaxHero>
-            <div className="hero-logo">
-              <Image src="/assets/Submark transparent.svg" alt="Stitched" width={350} height={350} className="hero-logo-img" priority />
+          <div className="hero-visual">
+            <div className="hero-image-container">
+              <div className="hero-image-placeholder">
+                <span>Hero image coming soon</span>
+              </div>
             </div>
-          </ParallaxHero>
+          </div>
         </div>
       </section>
 
