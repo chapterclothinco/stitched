@@ -50,32 +50,20 @@ em {
 }
 
 /* ================================
-   Floating Particles
+   Hero Logo Image
    ================================ */
-.particles {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 0;
-    overflow: hidden;
+.hero-logo-img {
+    width: 250px;
+    height: 250px;
+    opacity: 0.15;
 }
 
-.particle {
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    background: var(--accent);
-    border-radius: 50%;
-    opacity: 0.3;
-    animation: float var(--duration, 6s) ease-in-out infinite;
-    animation-delay: var(--delay, 0s);
+@media (min-width: 768px) {
+    .hero-logo-img { width: 300px; height: 300px; }
 }
 
-@keyframes float {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    25% { transform: translate(10px, -15px) scale(1.1); }
-    50% { transform: translate(-5px, 10px) scale(0.9); }
-    75% { transform: translate(15px, 5px) scale(1.05); }
+@media (min-width: 1024px) {
+    .hero-logo-img { width: 350px; height: 350px; }
 }
 
 /* ================================
@@ -2125,4 +2113,307 @@ a.info-value:hover {
 .brand-card:hover .brand-card-placeholder-logo {
     opacity: 1;
     transform: scale(1);
+}
+
+/* ================================
+   Founder Quote Section
+   ================================ */
+.founder-quote {
+    padding: 100px 0;
+    background: var(--accent-bg);
+    position: relative;
+    z-index: 1;
+}
+
+.founder-quote-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.founder-quote blockquote {
+    font-family: var(--font-serif);
+    font-size: clamp(20px, 3vw, 28px);
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--gray-700);
+    margin: 32px 0 24px;
+}
+
+.founder-quote .attribution {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+/* ================================
+   Coming Soon Projects
+   ================================ */
+.coming-soon-projects {
+    padding: 100px 0;
+    background: var(--white);
+    position: relative;
+    z-index: 1;
+}
+
+.coming-soon-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.coming-soon-content p {
+    font-size: 18px;
+    color: var(--gray-500);
+    margin: 16px 0 32px;
+    line-height: 1.7;
+}
+
+/* ================================
+   Not Sure Banner
+   ================================ */
+.not-sure-banner {
+    background: var(--white);
+    border: 2px solid var(--accent);
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.not-sure-banner h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.not-sure-banner p {
+    font-size: 15px;
+    color: var(--gray-500);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* ================================
+   Differentiator Text Group
+   ================================ */
+.diff-text-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.diff-text-group strong {
+    font-size: 16px;
+    color: var(--black);
+}
+
+/* ================================
+   Founder Section (About Page)
+   ================================ */
+.founder-section {
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.founder-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.founder-content h3 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 8px;
+}
+
+.founder-content h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.founder-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--gray-500);
+}
+
+/* ================================
+   Footer Social
+   ================================ */
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-social a {
+    color: var(--gray-500);
+    transition: color 0.2s;
+}
+
+.footer-social a:hover {
+    color: var(--accent);
+}
+
+/* ================================
+   Step Icons (Process Page)
+   ================================ */
+.step-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--accent-bg);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+/* ================================
+   Catalog Page
+   ================================ */
+.catalog-filters {
+    padding: 0 0 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid var(--gray-100);
+    border-radius: 100px;
+    background: var(--white);
+    color: var(--gray-500);
+    transition: all 0.2s;
+}
+
+.filter-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.filter-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--white);
+}
+
+.catalog-section {
+    padding: 0 0 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+@media (min-width: 640px) {
+    .catalog-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+    .catalog-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.catalog-card {
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s var(--ease);
+}
+
+.catalog-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.catalog-card-content {
+    padding: 28px;
+}
+
+.catalog-brand-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    background: var(--accent-bg);
+    padding: 4px 12px;
+    border-radius: 100px;
+    margin-bottom: 12px;
+}
+
+.catalog-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.catalog-card p {
+    font-size: 14px;
+    color: var(--gray-500);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.catalog-card .btn {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+/* ================================
+   Imagine More Section
+   ================================ */
+.imagine-more {
+    padding: 100px 0;
+    background: var(--accent-bg);
+    position: relative;
+    z-index: 1;
+}
+
+.imagine-more-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.imagine-more-content p {
+    font-size: 17px;
+    color: var(--gray-500);
+    line-height: 1.7;
+    margin: 16px 0;
+}
+
+.imagine-more-content .btn {
+    margin-top: 16px;
 }

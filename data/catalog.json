@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "id": "prod-001",
+      "brand": "celebration-collective",
+      "garmentType": "tank-top",
+      "title": "Vegas Bachelorette Custom Tanks",
+      "description": "Custom-dyed tanks with metallic foil detailing for a Las Vegas bachelorette weekend.",
+      "tags": ["tanks", "bachelorette", "custom-dye"]
+    },
+    {
+      "id": "prod-002",
+      "brand": "celebration-collective",
+      "garmentType": "t-shirt",
+      "title": "30th Birthday Weekend Tees",
+      "description": "Premium cotton tees with vintage-inspired typography celebrating a milestone birthday bash.",
+      "tags": ["t-shirts", "birthday", "typography"]
+    },
+    {
+      "id": "prod-003",
+      "brand": "mitzvah-studio",
+      "garmentType": "sweatshirt",
+      "title": "Bar Mitzvah Party Crew Sweatshirts",
+      "description": "Custom embroidered crewneck sweatshirts featuring the honoree's name and celebration date.",
+      "tags": ["sweatshirts", "bar-mitzvah", "embroidered"]
+    },
+    {
+      "id": "prod-004",
+      "brand": "mitzvah-studio",
+      "garmentType": "hoodie",
+      "title": "Bat Mitzvah Dance Party Hoodies",
+      "description": "Lightweight zip-up hoodies with modern design elements for the after-party celebration.",
+      "tags": ["hoodies", "bat-mitzvah", "dance-party"]
+    },
+    {
+      "id": "prod-005",
+      "brand": "altar-atelier",
+      "garmentType": "robe",
+      "title": "Bridal Party Silk Robes",
+      "description": "Heirloom-quality silk robes with hand-stitched monograms for the bridal party getting-ready moment.",
+      "tags": ["robes", "bridal", "silk", "monogram"]
+    },
+    {
+      "id": "prod-006",
+      "brand": "altar-atelier",
+      "garmentType": "pajama-set",
+      "title": "Wedding Weekend Pajama Sets",
+      "description": "Coordinated satin pajama sets for the entire bridal party, custom-designed to match wedding colors.",
+      "tags": ["pajamas", "wedding", "satin", "coordinated"]
+    },
+    {
+      "id": "prod-007",
+      "brand": "sewcorporate",
+      "garmentType": "polo",
+      "title": "Tech Company Launch Day Polos",
+      "description": "Premium pique polos with subtle embroidered logo placement for a company-wide product launch.",
+      "tags": ["polos", "corporate", "embroidered", "tech"]
+    },
+    {
+      "id": "prod-008",
+      "brand": "sewcorporate",
+      "garmentType": "quarter-zip",
+      "title": "Executive Team Quarter-Zips",
+      "description": "Performance-blend quarter-zip pullovers with tone-on-tone branding for the leadership team.",
+      "tags": ["quarter-zip", "executive", "performance"]
+    },
+    {
+      "id": "prod-009",
+      "brand": "member-threads",
+      "garmentType": "jacket",
+      "title": "Running Club Windbreakers",
+      "description": "Lightweight windbreakers with reflective detailing and custom club crest for a community running group.",
+      "tags": ["windbreaker", "club", "reflective", "running"]
+    },
+    {
+      "id": "prod-010",
+      "brand": "member-threads",
+      "garmentType": "t-shirt",
+      "title": "Alumni Association Annual Tees",
+      "description": "Soft-wash cotton tees with vintage-style graphics commemorating the annual alumni gathering.",
+      "tags": ["t-shirts", "alumni", "vintage", "annual"]
+    }
+  ]
+}

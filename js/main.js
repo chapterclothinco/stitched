@@ -7,39 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     initSmoothScroll();
     initScrollAnimations();
-    createParticles();
     initTypingEffect();
+    initCatalogFilters();
 });
-
-// ================================
-// Floating Particles
-// ================================
-function createParticles() {
-    const container = document.getElementById('particles');
-    if (!container) return;
-
-    const particleCount = 50;
-
-    for (let i = 0; i < particleCount; i++) {
-        const particle = document.createElement('div');
-        particle.className = 'particle';
-
-        // Random size
-        const size = Math.random() * 4 + 2;
-        particle.style.width = size + 'px';
-        particle.style.height = size + 'px';
-
-        // Random position
-        particle.style.left = Math.random() * 100 + '%';
-        particle.style.top = Math.random() * 100 + '%';
-
-        // Random animation duration
-        particle.style.animationDuration = (Math.random() * 20 + 10) + 's';
-        particle.style.animationDelay = (Math.random() * 10) + 's';
-
-        container.appendChild(particle);
-    }
-}
 
 // ================================
 // Navbar Scroll Effect
@@ -443,4 +413,51 @@ function initTypingEffect() {
     }
 
     type();
+}
+
+// ================================
+// Catalog Filtering
+// ================================
+function initCatalogFilters() {
+    const grid = document.getElementById('catalogGrid');
+    if (!grid) return;
+
+    fetch('data/catalog.json')
+        .then(res => res.json())
+        .then(data => {
+            const products = data.products;
+            renderProducts(products, grid);
+
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const filter = btn.dataset.filter;
+                    const filtered = filter === 'all' ? products : products.filter(p => p.brand === filter);
+                    renderProducts(filtered, grid);
+                });
+            });
+        })
+        .catch(() => {});
+}
+
+function renderProducts(products, grid) {
+    const brandLabels = {
+        'celebration-collective': 'Celebration Collective',
+        'mitzvah-studio': 'The Mitzvah Studio',
+        'altar-atelier': 'Altar Atelier',
+        'sewcorporate': 'SewCorporate',
+        'member-threads': 'Member Threads'
+    };
+
+    grid.innerHTML = products.map(p => `
+        <div class="catalog-card" data-brand="${p.brand}">
+            <div class="catalog-card-content">
+                <span class="catalog-brand-tag">${brandLabels[p.brand] || p.brand}</span>
+                <h3>${p.title}</h3>
+                <p>${p.description}</p>
+                <a href="contact.html?brand=${p.brand}" class="btn btn-primary">Design Something Like This</a>
+            </div>
+        </div>
+    `).join('');
 }
