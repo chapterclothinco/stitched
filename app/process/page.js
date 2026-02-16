@@ -193,7 +193,7 @@ export default function ProcessPage() {
           <div className="cta-content">
             <h2 className="cta-title">Ready to get <em>started?</em></h2>
             <p className="cta-description">Let&apos;s begin with a quick discovery call.</p>
-            <Link href="/contact" className="btn btn-primary btn-large">Start Your Project</Link>
+            <Link href="/contact" className="btn btn-primary btn-large btn-white">Start Your Project</Link>
           </div>
         </div>
       </section>

@@ -281,7 +281,7 @@ export default async function BrandPage({ params }) {
           <div className="cta-content">
             <h2 className="cta-title">{brand.cta.title}</h2>
             <p className="cta-description">{brand.cta.description}</p>
-            <Link href="/contact" className="btn btn-primary btn-large">{brand.cta.button}</Link>
+            <Link href="/contact" className="btn btn-primary btn-large btn-white">{brand.cta.button}</Link>
           </div>
         </div>
       </section>

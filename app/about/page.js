@@ -83,7 +83,7 @@ export default function AboutPage() {
           <div className="cta-content">
             <h2 className="cta-title">Ready to create something <em>worth keeping?</em></h2>
             <p className="cta-description">Let&apos;s talk about your next project.</p>
-            <Link href="/contact" className="btn btn-primary btn-large">Start Your Project</Link>
+            <Link href="/contact" className="btn btn-primary btn-large btn-white">Start Your Project</Link>
           </div>
         </div>
       </section>
