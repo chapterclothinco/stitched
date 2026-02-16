@@ -27,7 +27,6 @@ export default function Navbar() {
 
   const links = [
     { href: '/brands', label: 'Brands' },
-    { href: '/catalog', label: 'Catalog' },
     { href: '/about', label: 'About' },
     { href: '/process', label: 'Process' },
     { href: '/contact', label: 'Contact' },
