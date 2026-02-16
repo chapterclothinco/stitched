@@ -175,7 +175,7 @@ export default function HomePage() {
         <div className="container">
           <div className="founder-quote-content">
             <blockquote>
-              &ldquo;The custom apparel industry treats every event the same. We built Stitched to change that — five specialized brands, each designed to make your specific moment unforgettable.&rdquo;
+              &ldquo;The custom apparel industry treats every event the same. We built Stitched to change that. Five specialized brands, each designed to make your specific moment unforgettable.&rdquo;
             </blockquote>
             <p className="attribution">Ethan Scher, Founder</p>
           </div>
@@ -200,7 +200,19 @@ export default function HomePage() {
             </div>
             <div className="faq-home-item">
               <h4>What makes you different?</h4>
-              <p>Everything is cut-and-sew manufactured from scratch — not printed on generic blanks. Premium materials, modern fits, real design.</p>
+              <p>Everything is cut-and-sew manufactured from scratch. Not printed on generic blanks. Premium materials, modern fits, real design.</p>
+            </div>
+            <div className="faq-home-item">
+              <h4>Can I provide my own design?</h4>
+              <p>Absolutely. We can work with your existing artwork or create something entirely new from scratch.</p>
+            </div>
+            <div className="faq-home-item">
+              <h4>How much does it cost?</h4>
+              <p>Most projects range from $35-65 per piece depending on design, materials, and quantity. We provide detailed quotes after a quick discovery call.</p>
+            </div>
+            <div className="faq-home-item">
+              <h4>What if I&apos;m not sure which brand I need?</h4>
+              <p>No problem. Tell us about your event and we&apos;ll recommend the perfect brand for your moment.</p>
             </div>
           </div>
         </div>

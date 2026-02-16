@@ -2296,6 +2296,7 @@ a.info-value:hover {
 .founder-content {
     max-width: 700px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .founder-content h3 {
