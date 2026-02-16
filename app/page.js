@@ -24,9 +24,24 @@ export default function HomePage() {
             </div>
           </div>
           <div className="hero-visual">
-            <div className="hero-image-container">
-              <div className="hero-image-placeholder">
-                <span>Hero image coming soon</span>
+            <div className="hero-gallery">
+              <div className="gallery-item gallery-item-large">
+                <div className="gallery-placeholder">
+                  <span className="placeholder-icon">👗</span>
+                  <span className="placeholder-text">Custom Apparel</span>
+                </div>
+              </div>
+              <div className="gallery-item">
+                <div className="gallery-placeholder">
+                  <span className="placeholder-icon">✂️</span>
+                  <span className="placeholder-text">Cut & Sew</span>
+                </div>
+              </div>
+              <div className="gallery-item">
+                <div className="gallery-placeholder">
+                  <span className="placeholder-icon">🎨</span>
+                  <span className="placeholder-text">Custom Design</span>
+                </div>
               </div>
             </div>
           </div>
@@ -205,21 +220,20 @@ export default function HomePage() {
       {/* Trust Stats */}
       <section className="trust-stats">
         <div className="container">
-          <div className="trust-stats-grid">
-            <div className="trust-stat"><span className="trust-number">2026</span><span className="trust-label">Founded</span></div>
+          <div className="trust-stats-grid trust-stats-three">
             <div className="trust-stat"><span className="trust-number">5</span><span className="trust-label">Specialized Brands</span></div>
-            <div className="trust-stat"><span className="trust-number">100%</span><span className="trust-label">Custom Manufacturing</span></div>
-            <div className="trust-stat"><span className="trust-number">25+</span><span className="trust-label">Piece Minimums</span></div>
+            <div className="trust-stat"><span className="trust-number">100%</span><span className="trust-label">Cut-and-Sew Manufacturing</span></div>
+            <div className="trust-stat"><span className="trust-number">8+</span><span className="trust-label">Piece Minimum</span></div>
           </div>
         </div>
       </section>
 
-      {/* Coming Soon Projects */}
+      {/* CTA Banner */}
       <section className="coming-soon-projects">
         <div className="container">
           <div className="coming-soon-content">
-            <h2 className="section-title">Our First Projects Are <em>Underway</em></h2>
-            <p>We&apos;re currently working with our first clients across all five brands. Want to be among our founding customers?</p>
+            <h2 className="section-title">Your Moment Deserves <em>Better</em></h2>
+            <p>Whether it&apos;s a wedding, celebration, or corporate event — we design and manufacture custom apparel from scratch, so your group looks and feels incredible.</p>
             <Link href="/contact" className="btn btn-primary btn-large">Start Your Project</Link>
           </div>
         </div>
