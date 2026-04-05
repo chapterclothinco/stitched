@@ -4,6 +4,11 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Contact Us',
   description: 'Start your custom apparel project with Stitched. Tell us about your event and we\'ll bring your vision to life.',
+  openGraph: {
+    title: 'Contact Us | Stitched',
+    description: 'Start your custom apparel project with Stitched. Tell us about your event and we\'ll bring your vision to life.',
+    url: 'https://gostitched.com/contact',
+  },
 };
 
 export default function ContactPage() {
@@ -32,6 +37,10 @@ export default function ContactPage() {
                   <a href="mailto:hello@gostitched.com" className="info-value">hello@gostitched.com</a>
                 </div>
                 <div className="info-item">
+                  <span className="info-label">Phone</span>
+                  <a href="tel:+1XXXXXXXXXX" className="info-value">(XXX) XXX-XXXX</a>
+                </div>
+                <div className="info-item">
                   <span className="info-label">Response Time</span>
                   <span className="info-value">Within 24 hours</span>
                 </div>
@@ -39,10 +48,7 @@ export default function ContactPage() {
                   <span className="info-label">Hours</span>
                   <span className="info-value">Mon-Fri, 9am-6pm EST</span>
                 </div>
-                <div className="info-item">
-                  <span className="info-label">Book a Call</span>
-                  <a href="https://calendly.com/gostitched" target="_blank" className="info-value">Schedule a 15-min Discovery Call</a>
-                </div>
+                <a href="https://calendly.com/gostitched" target="_blank" rel="noopener noreferrer" className="btn btn-primary info-calendly-btn">Schedule a Discovery Call</a>
               </div>
 
               <div className="info-card">

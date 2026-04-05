@@ -32,6 +32,7 @@ export const metadata = {
     url: 'https://gostitched.com',
     siteName: 'Stitched',
     type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Stitched - Custom Apparel for Moments That Matter' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -41,10 +42,24 @@ export const metadata = {
   },
 };
 
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Stitched',
+  url: 'https://gostitched.com',
+  logo: 'https://gostitched.com/assets/Logo tansparent.svg',
+  email: 'hello@gostitched.com',
+  sameAs: [
+    'https://instagram.com/gostitched',
+    'https://www.linkedin.com/company/stitched-group',
+  ],
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <Navbar />
         {children}
         <Footer />

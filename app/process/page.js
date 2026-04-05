@@ -1,13 +1,32 @@
 import Link from 'next/link';
 
+const processFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: "What's the minimum order?", acceptedAnswer: { '@type': 'Answer', text: 'Minimums vary by brand. Celebration Collective starts at 12 pieces. Corporate orders start at 25. Contact us for specifics.' } },
+    { '@type': 'Question', name: 'How much does custom apparel cost?', acceptedAnswer: { '@type': 'Answer', text: 'Most projects range from $35–120 per piece depending on the brand, design, and materials. We provide a detailed quote after a quick discovery call.' } },
+    { '@type': 'Question', name: 'How far in advance should I order?', acceptedAnswer: { '@type': 'Answer', text: 'We recommend 6-8 weeks for most projects. Rush orders (4 weeks) available for an additional fee.' } },
+    { '@type': 'Question', name: 'Can you meet a tight deadline?', acceptedAnswer: { '@type': 'Answer', text: "We often can. Contact us with your date and quantity, and we'll let you know what's achievable." } },
+    { '@type': 'Question', name: 'Can I provide my own design?', acceptedAnswer: { '@type': 'Answer', text: 'Absolutely. We can work with your existing artwork or create something entirely new.' } },
+    { '@type': 'Question', name: "What if I don't know what I want?", acceptedAnswer: { '@type': 'Answer', text: "That's what our design team is for. We'll guide you through options and make recommendations based on your event." } },
+  ],
+};
+
 export const metadata = {
   title: 'Our Process',
   description: 'Learn how Stitched creates custom apparel - from discovery to delivery. Our 4-step process ensures quality results for every project.',
+  openGraph: {
+    title: 'Our Process | Stitched',
+    description: 'From discovery to delivery — learn how Stitched creates fully custom, cut-and-sew apparel in 4 steps.',
+    url: 'https://gostitched.com/process',
+  },
 };
 
 export default function ProcessPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(processFaqSchema) }} />
       <section className="page-hero">
         <div className="container">
           <span className="overline">Our Process</span>
@@ -166,7 +185,7 @@ export default function ProcessPage() {
             </div>
             <div className="faq-item">
               <h4 className="faq-question">How much does custom apparel cost?</h4>
-              <p className="faq-answer">Pricing depends on design complexity, materials, and quantity. Most projects range from $45-150 per piece. We provide detailed quotes after the Discovery call.</p>
+              <p className="faq-answer">Pricing depends on design complexity, materials, and quantity. Most projects range from $35–120 per piece depending on the brand, design, and materials. We provide a detailed quote after a quick discovery call.</p>
             </div>
             <div className="faq-item">
               <h4 className="faq-question">How far in advance should I order?</h4>
@@ -174,7 +193,7 @@ export default function ProcessPage() {
             </div>
             <div className="faq-item">
               <h4 className="faq-question">Can you meet a tight deadline?</h4>
-              <p className="faq-answer">Sometimes! Contact us with your date and we&apos;ll let you know what&apos;s possible.</p>
+              <p className="faq-answer">We often can. Contact us with your date and quantity, and we&apos;ll let you know what&apos;s achievable.</p>
             </div>
             <div className="faq-item">
               <h4 className="faq-question">Can I provide my own design?</h4>

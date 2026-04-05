@@ -45,7 +45,7 @@ export default function Navbar() {
             ))}
           </div>
           <div className="nav-actions">
-            <Link href="/contact" className="btn-nav">Get Started</Link>
+            <Link href="/brands" className="btn-nav">Get Started</Link>
           </div>
           <button
             className={`mobile-menu-btn${menuOpen ? ' active' : ''}`}
@@ -63,7 +63,7 @@ export default function Navbar() {
           {links.map((l) => (
             <Link key={l.href} href={l.href} onClick={closeMenu}>{l.label}</Link>
           ))}
-          <Link href="/contact" className="mobile-cta" onClick={closeMenu}>Get Started</Link>
+          <Link href="/brands" className="mobile-cta" onClick={closeMenu}>Get Started</Link>
         </div>
       </div>
     </>

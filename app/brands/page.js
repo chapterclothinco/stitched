@@ -3,6 +3,11 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Our Brands',
   description: 'Explore Stitched\'s five specialized brands - each dedicated to a specific type of moment with unique design sensibility and expertise.',
+  openGraph: {
+    title: 'Our Brands | Stitched',
+    description: 'Five specialized brands, each dedicated to a specific type of moment with unique design sensibility and expertise.',
+    url: 'https://gostitched.com/brands',
+  },
 };
 
 export default function BrandsPage() {
@@ -11,7 +16,7 @@ export default function BrandsPage() {
       <section className="page-hero">
         <div className="container">
           <span className="overline">Our Brands</span>
-          <h1 className="page-title">One Vision. Five Specialized <em>Brands</em></h1>
+          <h1 className="page-title">Five Brands. One Standard of <em>Quality.</em></h1>
           <p className="page-subtitle">Each moment deserves its own approach. Find the brand that fits yours.</p>
         </div>
       </section>

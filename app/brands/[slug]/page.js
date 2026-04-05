@@ -13,8 +13,8 @@ const brands = {
     minimum: '12 pieces',
     turnaround: '3-4 weeks',
     categories: ['tops', 'bottoms', 'accessories', 'sleepwear'],
-    logo: null,
-    logoEmoji: '\uD83C\uDF89',
+    logo: '/assets/Logos/CelebrationCollective.svg',
+    logoEmoji: null,
     perfectFor: [
       { title: 'Birthday Parties', desc: 'Milestone birthdays deserve more than a generic party hat. Custom tees, tanks, and sweats that celebrate the guest of honor in style.' },
       { title: 'Bachelor & Bachelorette', desc: 'From Vegas weekends to beach getaways, matching outfits that bring the squad together without looking like a cheesy costume.' },
@@ -199,6 +199,11 @@ export async function generateMetadata({ params }) {
   return {
     title: brand.name,
     description: brand.description,
+    openGraph: {
+      title: `${brand.name} | Stitched`,
+      description: brand.description,
+      url: `https://gostitched.com/brands/${slug}`,
+    },
   };
 }
 

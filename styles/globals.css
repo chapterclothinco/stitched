@@ -269,6 +269,14 @@ em {
     padding: 140px 0 100px;
     position: relative;
     z-index: 1;
+    overflow: hidden;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.97) 0%, rgba(245,245,247,0.95) 50%, rgba(240,240,242,0.92) 100%);
+    z-index: -1;
 }
 
 .hero-centered {
@@ -3134,5 +3142,156 @@ a.info-value:hover {
 
 .datepicker-cell.selected:hover {
     background: var(--gray-800);
+    color: var(--white);
+}
+
+/* Contact form success state */
+.form-success {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+.form-success-icon {
+    color: #22c55e;
+    margin-bottom: 1.5rem;
+}
+.form-success h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+.form-success p {
+    color: var(--gray-600);
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+}
+.form-success-sub {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+}
+.form-success-sub a {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+/* Contact form button row */
+.contact-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+.contact-buttons .btn {
+    flex: 1;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .contact-buttons {
+        flex-direction: column;
+    }
+}
+
+/* Calendly button in contact sidebar */
+.info-calendly-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+/* Founder photo placeholder */
+.founder-photo-placeholder {
+    width: 100%;
+    max-width: 280px;
+    aspect-ratio: 1;
+    background: var(--gray-100);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+/* Testimonials section (ready to activate) */
+.testimonials-section {
+    padding: 100px 0;
+}
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.testimonial-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 12px;
+    padding: 2rem;
+}
+.testimonial-card blockquote {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--gray-700);
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+.testimonial-card cite {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--gray-900);
+}
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Gallery page */
+.gallery-section {
+    padding: 60px 0 100px;
+}
+.gallery-coming-soon {
+    text-align: center;
+    padding: 80px 2rem;
+    background: var(--gray-50, #f9f9fb);
+    border-radius: 12px;
+    border: 1px solid var(--gray-200);
+}
+.gallery-coming-soon-text {
+    font-size: 1.15rem;
+    color: var(--gray-600);
+    margin-bottom: 2rem;
+}
+
+/* Legal pages */
+.legal-section {
+    padding: 40px 0 100px;
+}
+.legal-content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+.legal-content h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+.legal-content p {
+    color: var(--gray-600);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+.legal-content a {
+    color: var(--blue);
+}
+.legal-updated {
+    font-size: 0.9rem;
+    color: var(--gray-400);
+    margin-bottom: 2rem;
+}
+
+/* Footer legal links */
+.footer-bottom a {
+    color: var(--gray-400);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.footer-bottom a:hover {
     color: var(--white);
 }

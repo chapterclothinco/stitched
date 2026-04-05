@@ -2,9 +2,23 @@ import Link from 'next/link';
 import Image from 'next/image';
 import TypingEffect from '@/components/TypingEffect';
 
+const homeFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: "What's the minimum order?", acceptedAnswer: { '@type': 'Answer', text: 'Starting at 8 pieces for weddings and 12 for celebrations. Corporate orders start at 25.' } },
+    { '@type': 'Question', name: 'How far in advance should I order?', acceptedAnswer: { '@type': 'Answer', text: 'We recommend 6-8 weeks for most projects. Rush orders (4 weeks) are available.' } },
+    { '@type': 'Question', name: 'What makes you different?', acceptedAnswer: { '@type': 'Answer', text: "We're a manufacturing group with five specialized brands — each designed around a specific type of moment. Every piece is cut-and-sew from scratch, with a dedicated designer assigned to your project." } },
+    { '@type': 'Question', name: 'Can I provide my own design?', acceptedAnswer: { '@type': 'Answer', text: 'Absolutely. We can work with your existing artwork or create something entirely new from scratch.' } },
+    { '@type': 'Question', name: 'How much does it cost?', acceptedAnswer: { '@type': 'Answer', text: 'Most projects range from $35–120 per piece depending on the brand, design, and materials. We provide a detailed quote after a quick discovery call.' } },
+    { '@type': 'Question', name: 'What if I\'m not sure which brand I need?', acceptedAnswer: { '@type': 'Answer', text: "No problem. Tell us about your event and we'll recommend the perfect brand for your moment." } },
+  ],
+};
+
 export default function HomePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }} />
       {/* Hero */}
       <section className="hero">
         <div className="container">
@@ -14,7 +28,7 @@ export default function HomePage() {
               <span className="title-line"><TypingEffect /><span className="cursor">|</span></span>
             </h1>
             <p className="hero-description">
-              Designed and manufactured from scratch. Premium materials, modern fits, built for moments that matter.
+              Fully custom. Premium materials. Built for your moment.
             </p>
             <div className="hero-buttons">
               <Link href="/contact" className="btn btn-primary">Start a Project</Link>
@@ -31,7 +45,7 @@ export default function HomePage() {
             <p className="overline">Our Philosophy</p>
             <h2 className="headline-lg">We don&apos;t do <em>one-size-fits-all.</em></h2>
             <p className="body-lg">
-              Every piece is fully custom — designed from raw fabric to finished garment. No blank templates. No screen printing on generic tees. A real design process that treats your moment with the intention it deserves.
+              Every piece is fully custom — designed from raw fabric to finished garment. No blank templates. No screen printing on generic tees. A real design process built around your specific moment.
             </p>
           </div>
         </div>
@@ -73,6 +87,7 @@ export default function HomePage() {
 
           <div className="brands-grid">
             <Link href="/brands/celebration-collective" className="brand-card">
+              <Image src="/assets/Logos/CelebrationCollective.svg" alt="" className="brand-logo" width={200} height={200} />
               <div className="brand-card-content">
                 <h3 className="brand-name">Celebration Collective</h3>
                 <p className="brand-tagline">Birthday vibes, bach trip energy, reunion swagger — pieces your crew will actually want to wear.</p>
@@ -182,6 +197,31 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Testimonials - Uncomment when content is ready
+      <section className="testimonials-section">
+        <div className="container">
+          <div className="section-header center">
+            <p className="overline">What Our Clients Say</p>
+            <h2 className="section-title">Real <em>Stories</em></h2>
+          </div>
+          <div className="testimonials-grid">
+            <div className="testimonial-card">
+              <blockquote>&ldquo;Your testimonial here.&rdquo;</blockquote>
+              <cite>Client Name, Event Type</cite>
+            </div>
+            <div className="testimonial-card">
+              <blockquote>&ldquo;Your testimonial here.&rdquo;</blockquote>
+              <cite>Client Name, Event Type</cite>
+            </div>
+            <div className="testimonial-card">
+              <blockquote>&ldquo;Your testimonial here.&rdquo;</blockquote>
+              <cite>Client Name, Event Type</cite>
+            </div>
+          </div>
+        </div>
+      </section>
+      */}
+
       {/* FAQ */}
       <section className="faq-home-section">
         <div className="container">
@@ -200,7 +240,7 @@ export default function HomePage() {
             </div>
             <div className="faq-home-item">
               <h4>What makes you different?</h4>
-              <p>Everything is cut-and-sew manufactured from scratch. Not printed on generic blanks. Premium materials, modern fits, real design.</p>
+              <p>We&apos;re a manufacturing group with five specialized brands — each designed around a specific type of moment. Every piece is cut-and-sew from scratch, with a dedicated designer assigned to your project.</p>
             </div>
             <div className="faq-home-item">
               <h4>Can I provide my own design?</h4>
@@ -208,7 +248,7 @@ export default function HomePage() {
             </div>
             <div className="faq-home-item">
               <h4>How much does it cost?</h4>
-              <p>Most projects range from $35-65 per piece depending on design, materials, and quantity. We provide detailed quotes after a quick discovery call.</p>
+              <p>Most projects range from $35–120 per piece depending on the brand, design, and materials. We provide a detailed quote after a quick discovery call.</p>
             </div>
             <div className="faq-home-item">
               <h4>What if I&apos;m not sure which brand I need?</h4>
