@@ -8,6 +8,7 @@ export const metadata = {
     title: 'Contact Us | Stitched',
     description: 'Start your custom apparel project with Stitched. Tell us about your event and we\'ll bring your vision to life.',
     url: 'https://gostitched.com/contact',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Stitched - Custom Apparel for Moments That Matter' }],
   },
 };
 
@@ -35,10 +36,6 @@ export default function ContactPage() {
                 <div className="info-item">
                   <span className="info-label">Email</span>
                   <a href="mailto:hello@gostitched.com" className="info-value">hello@gostitched.com</a>
-                </div>
-                <div className="info-item">
-                  <span className="info-label">Phone</span>
-                  <a href="tel:+1XXXXXXXXXX" className="info-value">(XXX) XXX-XXXX</a>
                 </div>
                 <div className="info-item">
                   <span className="info-label">Response Time</span>

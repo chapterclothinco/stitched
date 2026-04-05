@@ -20,6 +20,7 @@ export const metadata = {
     title: 'Our Process | Stitched',
     description: 'From discovery to delivery — learn how Stitched creates fully custom, cut-and-sew apparel in 4 steps.',
     url: 'https://gostitched.com/process',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Stitched - Custom Apparel for Moments That Matter' }],
   },
 };
 

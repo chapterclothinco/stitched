@@ -203,6 +203,7 @@ export async function generateMetadata({ params }) {
       title: `${brand.name} | Stitched`,
       description: brand.description,
       url: `https://gostitched.com/brands/${slug}`,
+      images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Stitched - Custom Apparel for Moments That Matter' }],
     },
   };
 }
@@ -214,6 +215,13 @@ export default async function BrandPage({ params }) {
 
   return (
     <>
+      {/* Breadcrumb */}
+      <div className="breadcrumb">
+        <div className="container">
+          <Link href="/brands" className="breadcrumb-link">&larr; All Brands</Link>
+        </div>
+      </div>
+
       {/* Brand Hero */}
       <section className="page-hero brand-hero">
         <div className="container">

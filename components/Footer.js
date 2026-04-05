@@ -24,7 +24,6 @@ export default function Footer() {
               <h4>Company</h4>
               <Link href="/about">About</Link>
               <Link href="/process">Process</Link>
-              <Link href="/gallery">Gallery</Link>
               <Link href="/contact">Contact</Link>
             </div>
           </div>

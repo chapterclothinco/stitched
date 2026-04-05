@@ -7,6 +7,7 @@ export const metadata = {
     title: 'About Us | Stitched',
     description: 'A design-led manufacturing group creating premium custom apparel for life\'s most meaningful moments.',
     url: 'https://gostitched.com/about',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Stitched - Custom Apparel for Moments That Matter' }],
   },
 };
 

@@ -47,7 +47,7 @@ const organizationSchema = {
   '@type': 'Organization',
   name: 'Stitched',
   url: 'https://gostitched.com',
-  logo: 'https://gostitched.com/assets/Logo tansparent.svg',
+  logo: 'https://gostitched.com/assets/Logo transparent.svg',
   email: 'hello@gostitched.com',
   sameAs: [
     'https://instagram.com/gostitched',

@@ -7,6 +7,7 @@ export const metadata = {
     title: 'Gallery | Stitched',
     description: 'Explore our portfolio of custom apparel projects across five specialized brands.',
     url: 'https://gostitched.com/gallery',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Stitched - Custom Apparel for Moments That Matter' }],
   },
 };
 

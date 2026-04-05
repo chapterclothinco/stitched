@@ -5,6 +5,7 @@ export const metadata = {
     title: 'Terms of Service | Stitched',
     description: 'Terms of Service for Stitched Group LLC.',
     url: 'https://gostitched.com/terms',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Stitched - Custom Apparel for Moments That Matter' }],
   },
 };
 

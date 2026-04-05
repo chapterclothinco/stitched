@@ -5,6 +5,7 @@ export const metadata = {
     title: 'Privacy Policy | Stitched',
     description: 'Privacy Policy for Stitched Group LLC.',
     url: 'https://gostitched.com/privacy',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Stitched - Custom Apparel for Moments That Matter' }],
   },
 };
 

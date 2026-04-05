@@ -7,6 +7,7 @@ export const metadata = {
     title: 'Our Brands | Stitched',
     description: 'Five specialized brands, each dedicated to a specific type of moment with unique design sensibility and expertise.',
     url: 'https://gostitched.com/brands',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Stitched - Custom Apparel for Moments That Matter' }],
   },
 };
 
