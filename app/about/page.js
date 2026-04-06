@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'About Us',
@@ -64,9 +65,9 @@ export default function AboutPage() {
             <span className="overline">Who We Are</span>
             <h2 className="section-title">Our <em>Foundation</em></h2>
           </div>
-          <div className="stats-grid">
+          <div className="stats-grid stats-grid-three">
             <div className="stat-item"><span className="stat-number">5</span><span className="stat-label">Specialized Brands</span></div>
-            <div className="stat-item"><span className="stat-number">3-4 wk</span><span className="stat-label">Average Turnaround</span></div>
+            <div className="stat-item"><span className="stat-number">6-8 wk</span><span className="stat-label">Average Turnaround</span></div>
             <div className="stat-item"><span className="stat-number">24 hr</span><span className="stat-label">Response Time</span></div>
           </div>
         </div>
@@ -76,7 +77,7 @@ export default function AboutPage() {
         <div className="container">
           <div className="founder-content">
             <div className="founder-photo-placeholder">
-              {/* Add founder headshot: <Image src="/assets/founder.jpg" alt="Ethan Scher" width={400} height={400} /> */}
+              <Image src="/assets/founder.jpg" alt="Ethan Scher, Founder of Stitched" width={400} height={400} />
             </div>
             <div>
               <h3>Meet the Founder</h3>
