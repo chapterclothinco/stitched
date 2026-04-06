@@ -18,7 +18,7 @@ export default function BrandsPage() {
         <div className="container">
           <span className="overline">Our Brands</span>
           <h1 className="page-title">Five Brands. One Standard of <em>Quality.</em></h1>
-          <p className="page-subtitle">Each moment deserves its own approach. Find the brand that fits yours.</p>
+          <p className="page-subtitle">Every moment deserves its own approach. Find the brand that fits yours.</p>
         </div>
       </section>
 
@@ -32,7 +32,7 @@ export default function BrandsPage() {
                 <p className="brand-page-tagline">Life&apos;s milestones, elevated</p>
               </div>
               <p className="brand-page-description">
-                Birthdays, bach trips, graduations, reunions — apparel that makes the moment memorable. Fun, colorful, and perfectly suited for personal celebrations.
+                Birthdays, bach trips, graduations, reunions. Apparel that makes the moment memorable. Fun, colorful, and suited for the celebrations that actually matter to you.
               </p>
               <div className="brand-page-meta">
                 <span className="brand-price">From $40/piece</span>
@@ -48,7 +48,7 @@ export default function BrandsPage() {
                 <p className="brand-page-tagline">Modern apparel for timeless traditions</p>
               </div>
               <p className="brand-page-description">
-                Culturally aware design, crafted with reverence and modern restraint. Age-appropriate styles that honor tradition while feeling fresh.
+                Culturally aware design with reverence and modern restraint. Age-appropriate styles that honor tradition while still feeling fresh.
               </p>
               <div className="brand-page-meta">
                 <span className="brand-price">From $55/piece</span>
@@ -64,7 +64,7 @@ export default function BrandsPage() {
                 <p className="brand-page-tagline">Refined pieces for every moment</p>
               </div>
               <p className="brand-page-description">
-                Heirloom-quality apparel designed for the most intentional day of your life. Elegant, romantic, and crafted to become cherished keepsakes.
+                Heirloom-quality apparel for the most intentional day of your life. Elegant, romantic, and made to become keepsakes.
               </p>
               <div className="brand-page-meta">
                 <span className="brand-price">From $65/piece</span>
@@ -80,7 +80,7 @@ export default function BrandsPage() {
                 <p className="brand-page-tagline">Elevated corporate and brand apparel</p>
               </div>
               <p className="brand-page-description">
-                Premium brand expression for organizations that operate at scale. Professional, modern, and built to impress clients and employees alike.
+                Premium brand expression for organizations that operate at scale. Professional, modern, and made to impress clients and employees alike.
               </p>
               <div className="brand-page-meta">
                 <span className="brand-price">From $45/piece</span>
@@ -96,7 +96,7 @@ export default function BrandsPage() {
                 <p className="brand-page-tagline">Unity in every stitch</p>
               </div>
               <p className="brand-page-description">
-                Elevated apparel for groups that expect more than standard issue. Inclusive, team-oriented, and built for communities that take pride in belonging.
+                Elevated apparel for groups that expect more than standard issue. Team-oriented and made for communities that take pride in belonging.
               </p>
               <div className="brand-page-meta">
                 <span className="brand-price">From $35/piece</span>

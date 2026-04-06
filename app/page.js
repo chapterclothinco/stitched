@@ -8,9 +8,9 @@ const homeFaqSchema = {
   mainEntity: [
     { '@type': 'Question', name: "What's the minimum order?", acceptedAnswer: { '@type': 'Answer', text: 'Starting at 8 pieces for weddings and 12 for celebrations. Corporate orders start at 25.' } },
     { '@type': 'Question', name: 'How far in advance should I order?', acceptedAnswer: { '@type': 'Answer', text: 'We recommend 6-8 weeks for most projects. Rush orders (4 weeks) are available.' } },
-    { '@type': 'Question', name: 'What makes you different?', acceptedAnswer: { '@type': 'Answer', text: "We're a manufacturing group with five specialized brands — each designed around a specific type of moment. Every piece is cut-and-sew from scratch, with a dedicated designer assigned to your project." } },
+    { '@type': 'Question', name: 'What makes you different?', acceptedAnswer: { '@type': 'Answer', text: "We're a manufacturing group with five specialized brands, each one designed around a specific type of moment. Every piece is cut-and-sew from scratch, and you get a dedicated designer assigned to your project." } },
     { '@type': 'Question', name: 'Can I provide my own design?', acceptedAnswer: { '@type': 'Answer', text: 'Absolutely. We can work with your existing artwork or create something entirely new from scratch.' } },
-    { '@type': 'Question', name: 'How much does it cost?', acceptedAnswer: { '@type': 'Answer', text: 'Most projects range from $35–120 per piece depending on the brand, design, and materials. We provide a detailed quote after a quick discovery call.' } },
+    { '@type': 'Question', name: 'How much does it cost?', acceptedAnswer: { '@type': 'Answer', text: 'Most projects run $35 to $120 per piece depending on the brand, design, and materials. We\'ll put together a detailed quote after a quick discovery call.' } },
     { '@type': 'Question', name: 'What if I\'m not sure which brand I need?', acceptedAnswer: { '@type': 'Answer', text: "No problem. Tell us about your event and we'll recommend the perfect brand for your moment." } },
   ],
 };
@@ -28,7 +28,7 @@ export default function HomePage() {
               <span className="title-line"><TypingEffect /><span className="cursor">|</span></span>
             </h1>
             <p className="hero-description">
-              Fully custom. Premium materials. Built for your moment.
+              Designed from scratch. Premium fabrics. Made for the moments that actually matter.
             </p>
             <div className="hero-buttons">
               <Link href="/contact" className="btn btn-primary">Start a Project</Link>
@@ -45,7 +45,7 @@ export default function HomePage() {
             <p className="overline">Our Philosophy</p>
             <h2 className="headline-lg">We don&apos;t do <em>one-size-fits-all.</em></h2>
             <p className="body-lg">
-              Every piece is fully custom — designed from raw fabric to finished garment. No blank templates. No screen printing on generic tees. A real design process built around your specific moment.
+              Every piece is fully custom, designed from raw fabric to finished garment. No blank templates. No screen printing on generic tees. Just a real design process, built around your specific moment.
             </p>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default function HomePage() {
             <div className="pillar-card">
               <span className="pillar-number">02</span>
               <h3 className="pillar-title">Specialization Over Generalization</h3>
-              <p className="pillar-description">Five dedicated brands, each built for a specific type of moment.</p>
+              <p className="pillar-description">Five dedicated brands. Each one built for a specific type of moment.</p>
             </div>
             <div className="pillar-card">
               <span className="pillar-number">03</span>
@@ -81,7 +81,7 @@ export default function HomePage() {
             <p className="overline">Our Brands</p>
             <h2 className="headline-lg">Five brands. One <em>standard.</em></h2>
             <p className="section-subtitle">
-              Each brand has its own identity, expertise, and design sensibility — all powered by the same world-class manufacturing.
+              Each brand has its own identity, expertise, and design sensibility. All powered by the same manufacturing standards.
             </p>
           </div>
 
@@ -90,7 +90,7 @@ export default function HomePage() {
               <Image src="/assets/Logos/CelebrationCollective.svg" alt="" className="brand-logo" width={200} height={200} />
               <div className="brand-card-content">
                 <h3 className="brand-name">Celebration Collective</h3>
-                <p className="brand-tagline">Birthday vibes, bach trip energy, reunion swagger — pieces your crew will actually want to wear.</p>
+                <p className="brand-tagline">Birthday vibes, bach trip energy, reunion swagger. Pieces your crew will actually want to wear.</p>
                 <span className="brand-cta">Explore &rarr;</span>
               </div>
             </Link>
@@ -98,7 +98,7 @@ export default function HomePage() {
               <Image src="/assets/Logos/MitzvahStudio.svg" alt="" className="brand-logo" width={200} height={200} />
               <div className="brand-card-content">
                 <h3 className="brand-name">The Mitzvah Studio</h3>
-                <p className="brand-tagline">Honoring tradition while feeling fresh. Custom pieces for this once-in-a-lifetime moment.</p>
+                <p className="brand-tagline">Fresh takes on tradition. Custom pieces for a once-in-a-lifetime moment.</p>
                 <span className="brand-cta">Explore &rarr;</span>
               </div>
             </Link>
@@ -114,7 +114,7 @@ export default function HomePage() {
               <Image src="/assets/Logos/SewCorporate.svg" alt="" className="brand-logo" width={200} height={200} />
               <div className="brand-card-content">
                 <h3 className="brand-name">SewCorporate</h3>
-                <p className="brand-tagline">Custom branded apparel that your team actually wants to wear. Built for quality and culture.</p>
+                <p className="brand-tagline">Branded apparel your team will actually want to wear. Built for quality and culture.</p>
                 <span className="brand-cta">Explore &rarr;</span>
               </div>
             </Link>
@@ -122,7 +122,7 @@ export default function HomePage() {
               <Image src="/assets/Logos/MemberThreads.svg" alt="" className="brand-logo brand-logo-member-threads" width={200} height={200} />
               <div className="brand-card-content">
                 <h3 className="brand-name">Member Threads</h3>
-                <p className="brand-tagline">Membership gear that builds belonging. For clubs, organizations, and communities.</p>
+                <p className="brand-tagline">Gear that builds belonging. For clubs, organizations, and communities that want more than a logo on a blank.</p>
                 <span className="brand-cta">Explore &rarr;</span>
               </div>
             </Link>
@@ -143,8 +143,8 @@ export default function HomePage() {
           </div>
           <div className="process-grid">
             {[
-              { num: '01', title: 'Discovery', desc: 'Tell us about your moment, your group, and your vision. We listen before we design.' },
-              { num: '02', title: 'Design', desc: 'Our team creates fully custom concepts — not templates with your logo slapped on.' },
+              { num: '01', title: 'Discovery', desc: 'Tell us about your moment, your group, and your vision. We listen first, design second.' },
+              { num: '02', title: 'Design', desc: 'Our team creates fully custom concepts. Not templates with your logo slapped on.' },
               { num: '03', title: 'Production', desc: 'Premium materials, modern fits, meticulous quality control. Every piece is made to keep.' },
               { num: '04', title: 'Delivery', desc: 'Seamless logistics whether you\'re ordering 12 pieces or 1,200.' },
             ].map(s => (
@@ -168,9 +168,9 @@ export default function HomePage() {
             </div>
             <div className="diff-list">
               {[
-                { title: 'Cut-and-Sew Manufacturing', text: 'We don\'t print on blanks. Every garment is built from raw fabric to finished piece.' },
+                { title: 'Cut-and-Sew Manufacturing', text: 'We don\'t print on blanks. Every garment is built from raw fabric to a finished piece.' },
                 { title: '5 Specialized Brands', text: 'Your wedding deserves a different designer than your corporate retreat.' },
-                { title: 'Your Own Designer', text: 'No template pickers. A real designer creates custom concepts for your specific event.' },
+                { title: 'Your Own Designer', text: 'No template pickers. A real designer works with you on custom concepts for your specific event.' },
                 { title: 'Factory-Direct Pricing', text: 'We own the manufacturing process, so you get premium quality without the luxury markup.' },
               ].map(d => (
                 <div key={d.title} className="diff-item">
@@ -190,7 +190,7 @@ export default function HomePage() {
         <div className="container">
           <div className="founder-quote-content">
             <blockquote>
-              &ldquo;The custom apparel industry treats every event the same. We built Stitched to change that. Five specialized brands, each designed to make your specific moment unforgettable.&rdquo;
+              &ldquo;Every custom apparel company treats every event the same. We built Stitched to fix that. Five brands, five different approaches, all built around making your specific moment feel like it matters.&rdquo;
             </blockquote>
             <p className="attribution">Ethan Scher, Founder</p>
           </div>
@@ -240,7 +240,7 @@ export default function HomePage() {
             </div>
             <div className="faq-home-item">
               <h4>What makes you different?</h4>
-              <p>We&apos;re a manufacturing group with five specialized brands — each designed around a specific type of moment. Every piece is cut-and-sew from scratch, with a dedicated designer assigned to your project.</p>
+              <p>We&apos;re a manufacturing group with five specialized brands, each one designed around a specific type of moment. Every piece is cut-and-sew from scratch, and you get a dedicated designer assigned to your project.</p>
             </div>
             <div className="faq-home-item">
               <h4>Can I provide my own design?</h4>
@@ -248,7 +248,7 @@ export default function HomePage() {
             </div>
             <div className="faq-home-item">
               <h4>How much does it cost?</h4>
-              <p>Most projects range from $35–120 per piece depending on the brand, design, and materials. We provide a detailed quote after a quick discovery call.</p>
+              <p>Most projects run $35 to $120 per piece depending on the brand, design, and materials. We&apos;ll put together a detailed quote after a quick discovery call.</p>
             </div>
             <div className="faq-home-item">
               <h4>What if I&apos;m not sure which brand I need?</h4>

@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Gallery',
-  description: 'Explore our portfolio of custom apparel projects — from weddings and celebrations to corporate events and team gear.',
+  description: 'Explore our portfolio of custom apparel projects, from weddings and celebrations to corporate events and team gear.',
   openGraph: {
     title: 'Gallery | Stitched',
     description: 'Explore our portfolio of custom apparel projects across five specialized brands.',

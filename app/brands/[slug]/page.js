@@ -8,7 +8,7 @@ const brands = {
     name: 'Celebration Collective',
     tag: 'Life Celebrations',
     tagline: "Life's milestones, elevated",
-    description: "Birthdays, bach trips, graduations, reunions — apparel that makes the moment memorable. Fun, colorful, and perfectly suited for personal celebrations.",
+    description: "Birthdays, bach trips, graduations, reunions. Apparel that makes the moment memorable. Fun, colorful, and suited for the celebrations that actually matter to you.",
     price: '$40/piece',
     minimum: '12 pieces',
     turnaround: '3-4 weeks',
@@ -20,13 +20,13 @@ const brands = {
       { title: 'Bachelor & Bachelorette', desc: 'From Vegas weekends to beach getaways, matching outfits that bring the squad together without looking like a cheesy costume.' },
       { title: 'Graduations', desc: 'Celebrate the achievement with custom pieces for grad parties, family gatherings, and friend groups marking the milestone together.' },
       { title: 'Family Reunions', desc: 'Unite the family with custom apparel that honors your history while looking good enough to actually wear again.' },
-      { title: 'Friend Trips', desc: 'Annual lake trips, ski weekends, or destination adventures — matching pieces that become cherished memories.' },
-      { title: 'Group Milestones', desc: 'Retirements, anniversaries, achievements — any moment worth celebrating with custom apparel done right.' },
+      { title: 'Friend Trips', desc: 'Annual lake trips, ski weekends, or destination adventures. Matching pieces that become cherished memories.' },
+      { title: 'Group Milestones', desc: 'Retirements, anniversaries, achievements. Any moment worth celebrating with custom apparel done right.' },
     ],
     approach: {
       tag: 'Our Approach',
       title: 'Designed for Fun',
-      lead: "Celebration Collective pieces are designed to capture the energy of your moment — playful, vibrant, and unapologetically fun.",
+      lead: "Celebration Collective pieces are designed to capture the energy of your moment. Playful, vibrant, and unapologetically fun.",
       body: "Our design team specializes in creating apparel that strikes the perfect balance: trendy enough to actually wear, personalized enough to feel special, and quality enough to keep long after the party ends.",
       features: [
         'Bold colors and modern typography',
@@ -53,11 +53,11 @@ const brands = {
     logo: '/assets/Logos/MitzvahStudio.svg',
     perfectFor: [
       { title: 'Bar Mitzvahs', desc: "Celebrate this milestone with custom apparel that reflects the young man's personality while respecting the significance of the occasion." },
-      { title: 'Bat Mitzvahs', desc: 'Elegant, age-appropriate designs that the honoree and guests will actually want to wear — during the celebration and beyond.' },
+      { title: 'Bat Mitzvahs', desc: 'Elegant, age-appropriate designs that the honoree and guests will actually want to wear, during the celebration and beyond.' },
       { title: 'Party Favors', desc: 'Move beyond the typical swag bag with premium custom pieces that guests will cherish as meaningful keepsakes.' },
       { title: 'Family Matching', desc: 'Coordinated looks for immediate family, cousins, and close friends that photograph beautifully and feel special.' },
       { title: 'Event Staff', desc: "Polished, professional attire for event staff and helpers that complements your event's aesthetic." },
-      { title: 'Weekend Celebrations', desc: 'Multi-day celebrations call for multiple looks — we design cohesive collections for every event on the schedule.' },
+      { title: 'Weekend Celebrations', desc: 'Multi-day celebrations call for multiple looks. We design cohesive collections for every event on the schedule.' },
     ],
     approach: {
       tag: 'Our Approach',
@@ -90,16 +90,16 @@ const brands = {
     perfectFor: [
       { title: 'Bridal Parties', desc: 'Elevated getting-ready robes, pajama sets, and loungewear that photograph beautifully and feel luxurious.' },
       { title: 'Wedding Weekends', desc: 'Coordinated looks for rehearsal dinners, welcome parties, and morning-after brunches that extend the celebration.' },
-      { title: 'Bachelorette Trips', desc: 'Sophisticated bachelorette apparel that rises above the typical — elegant enough for upscale destinations.' },
-      { title: 'Groomsmen', desc: 'Custom pieces for the groom\'s crew — from getting-ready gear to coordinated casual wear for events.' },
+      { title: 'Bachelorette Trips', desc: 'Sophisticated bachelorette apparel that rises above the typical. Elegant enough for upscale destinations.' },
+      { title: 'Groomsmen', desc: 'Custom pieces for the groom\'s crew, from getting-ready gear to coordinated casual wear for events.' },
       { title: 'Family Coordination', desc: 'Subtle matching elements for family photos and wedding weekend events that feel cohesive without being costumey.' },
-      { title: 'Honeymoon', desc: "Custom pieces for the newlyweds — from 'Just Married' loungewear to personalized honeymoon essentials." },
+      { title: 'Honeymoon', desc: "Custom pieces for the newlyweds, from 'Just Married' loungewear to personalized honeymoon essentials." },
     ],
     approach: {
       tag: 'Our Approach',
       title: 'Heirloom Quality',
-      lead: "Altar Atelier creates pieces worthy of the most significant celebration of your life — apparel you'll want to keep, not discard.",
-      body: 'We specialize in romantic, elevated aesthetics that complement any wedding style — from modern minimalist to classic romantic. Every piece is designed with intention, using premium materials that feel as luxurious as your day deserves.',
+      lead: "Altar Atelier creates pieces worthy of the most significant celebration of your life. Apparel you'll want to keep, not throw away.",
+      body: 'We specialize in romantic, elevated aesthetics that complement any wedding style, from modern minimalist to classic romantic. Every piece is designed with intention, using materials that feel as luxurious as your day deserves.',
       features: [
         'Elegant typography and refined design details',
         'Premium silk, satin, and soft cotton fabrics',
@@ -124,17 +124,17 @@ const brands = {
     categories: ['tops', 'accessories'],
     logo: '/assets/Logos/SewCorporate.svg',
     perfectFor: [
-      { title: 'Company Swag', desc: 'Move beyond generic promotional items with premium apparel employees actually want to wear — at work and beyond.' },
+      { title: 'Company Swag', desc: 'Move beyond generic promotional items with premium apparel employees actually want to wear, at work and beyond.' },
       { title: 'Corporate Events', desc: "Conferences, retreats, team building events, and annual meetings deserve apparel that reflects your brand's quality." },
       { title: 'Employee Onboarding', desc: 'Make new hires feel valued from day one with a welcome kit that goes beyond the standard notebook and pen.' },
-      { title: 'Client Gifts', desc: 'Premium branded apparel that clients will actually use — strengthening relationships through quality gifting.' },
+      { title: 'Client Gifts', desc: 'Premium branded apparel that clients will actually use, strengthening relationships through quality gifting.' },
       { title: 'Trade Shows', desc: 'Stand out from the competition with booth staff apparel and attendee giveaways that make an impression.' },
       { title: 'Brand Launches', desc: 'New brand or rebrand? Create cohesive apparel that introduces your visual identity with impact.' },
     ],
     approach: {
       tag: 'Our Approach',
       title: 'Brand Expression at Scale',
-      lead: 'SewCorporate understands that your apparel is an extension of your brand — every piece should reflect your standards.',
+      lead: 'SewCorporate understands that your apparel is an extension of your brand. Every piece should reflect your standards.',
       body: 'We specialize in translating corporate brand guidelines into premium apparel that employees are proud to wear. Our design process includes brand alignment reviews to ensure every piece accurately represents your visual identity.',
       features: [
         'Professional designs that align with brand guidelines',
@@ -162,7 +162,7 @@ const brands = {
     logoClassName: 'brand-logo-member-threads',
     perfectFor: [
       { title: 'Sports Teams', desc: 'Game day gear, practice wear, and spirit apparel that builds team unity and looks great on the sidelines.' },
-      { title: 'Greek Life', desc: 'Fraternity and sorority apparel that goes beyond basic letters — elevated designs that represent your chapter with pride.' },
+      { title: 'Greek Life', desc: 'Fraternity and sorority apparel that goes beyond basic letters. Designs that represent your chapter with pride.' },
       { title: 'Clubs & Organizations', desc: 'Academic clubs, honor societies, student organizations, and hobby groups deserve apparel as dedicated as their members.' },
       { title: 'Volunteer Groups', desc: 'Unite your volunteer team with apparel that identifies your cause and builds community among supporters.' },
       { title: 'Religious Organizations', desc: "Youth groups, mission trips, and congregation events with apparel that reflects your community's values." },
@@ -171,8 +171,8 @@ const brands = {
     approach: {
       tag: 'Our Approach',
       title: 'Designed for Belonging',
-      lead: 'Member Threads understands that group apparel is about more than matching — it\'s about belonging to something bigger than yourself.',
-      body: 'We create apparel that members are proud to wear, with inclusive sizing and designs that work for diverse groups. Our pieces build community while respecting individual style — unified without being uniform.',
+      lead: 'Member Threads understands that group apparel is about more than matching. It\'s about belonging to something bigger than yourself.',
+      body: 'We create apparel that members are proud to wear, with inclusive sizing and designs that work for diverse groups. Our pieces build community while respecting individual style. Unified without being uniform.',
       features: [
         'Inclusive size ranges for all body types',
         'Designs that balance unity with individual expression',

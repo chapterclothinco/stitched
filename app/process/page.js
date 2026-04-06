@@ -5,11 +5,11 @@ const processFaqSchema = {
   '@type': 'FAQPage',
   mainEntity: [
     { '@type': 'Question', name: "What's the minimum order?", acceptedAnswer: { '@type': 'Answer', text: 'Minimums vary by brand. Celebration Collective starts at 12 pieces. Corporate orders start at 25. Contact us for specifics.' } },
-    { '@type': 'Question', name: 'How much does custom apparel cost?', acceptedAnswer: { '@type': 'Answer', text: 'Most projects range from $35–120 per piece depending on the brand, design, and materials. We provide a detailed quote after a quick discovery call.' } },
+    { '@type': 'Question', name: 'How much does custom apparel cost?', acceptedAnswer: { '@type': 'Answer', text: 'Pricing depends on design complexity, materials, and quantity. Most projects run $35 to $120 per piece. We put together a detailed quote after a quick discovery call.' } },
     { '@type': 'Question', name: 'How far in advance should I order?', acceptedAnswer: { '@type': 'Answer', text: 'We recommend 6-8 weeks for most projects. Rush orders (4 weeks) available for an additional fee.' } },
     { '@type': 'Question', name: 'Can you meet a tight deadline?', acceptedAnswer: { '@type': 'Answer', text: "We often can. Contact us with your date and quantity, and we'll let you know what's achievable." } },
     { '@type': 'Question', name: 'Can I provide my own design?', acceptedAnswer: { '@type': 'Answer', text: 'Absolutely. We can work with your existing artwork or create something entirely new.' } },
-    { '@type': 'Question', name: "What if I don't know what I want?", acceptedAnswer: { '@type': 'Answer', text: "That's what our design team is for. We'll guide you through options and make recommendations based on your event." } },
+    { '@type': 'Question', name: "What if I don't know what I want?", acceptedAnswer: { '@type': 'Answer', text: "That's literally what our design team is for. We'll walk you through options and make recommendations based on your event." } },
   ],
 };
 
@@ -18,7 +18,7 @@ export const metadata = {
   description: 'Learn how Stitched creates custom apparel - from discovery to delivery. Our 4-step process ensures quality results for every project.',
   openGraph: {
     title: 'Our Process | Stitched',
-    description: 'From discovery to delivery — learn how Stitched creates fully custom, cut-and-sew apparel in 4 steps.',
+    description: 'From discovery to delivery. Learn how Stitched creates fully custom, cut-and-sew apparel in 4 steps.',
     url: 'https://gostitched.com/process',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Stitched - Custom Apparel for Moments That Matter' }],
   },
@@ -32,7 +32,7 @@ export default function ProcessPage() {
         <div className="container">
           <span className="overline">Our Process</span>
           <h1 className="page-title">From Concept to <em>Creation</em></h1>
-          <p className="page-subtitle">Every piece is crafted with intention, from initial design through final delivery.</p>
+          <p className="page-subtitle">Every piece is made with intention, from first concept to final delivery.</p>
         </div>
       </section>
 
@@ -49,7 +49,7 @@ export default function ProcessPage() {
                 </div>
               </div>
               <div className="step-content">
-                <p className="step-intro">We start by understanding your vision, event details, and what makes your moment unique.</p>
+                <p className="step-intro">We start by learning about your vision, your event, and what makes your moment different.</p>
                 <div className="step-details-grid">
                   <div className="step-details-col">
                     <h4>What Happens</h4>
@@ -81,7 +81,7 @@ export default function ProcessPage() {
                 </div>
               </div>
               <div className="step-content">
-                <p className="step-intro">Our dedicated designers bring your vision to life with custom concepts tailored to your event.</p>
+                <p className="step-intro">Our designers bring your vision to life with custom concepts built around your event.</p>
                 <div className="step-details-grid">
                   <div className="step-details-col">
                     <h4>What Happens</h4>
@@ -114,7 +114,7 @@ export default function ProcessPage() {
                 </div>
               </div>
               <div className="step-content">
-                <p className="step-intro">Every piece is crafted from scratch using premium materials and expert manufacturing.</p>
+                <p className="step-intro">Every piece is made from scratch with premium materials and hands-on quality control.</p>
                 <div className="step-details-grid">
                   <div className="step-details-col">
                     <h4>What Happens</h4>
@@ -128,9 +128,9 @@ export default function ProcessPage() {
                   <div className="step-details-col">
                     <h4>What Makes Us Different</h4>
                     <ul>
-                      <li>Made from scratch, not printed on generic blanks</li>
+                      <li>Made from scratch. Not printed on generic blanks.</li>
                       <li>Modern fits designed for real bodies</li>
-                      <li>Premium fabrics that feel as good as they look</li>
+                      <li>Premium fabrics that feel as good as they look.</li>
                     </ul>
                   </div>
                 </div>
@@ -147,7 +147,7 @@ export default function ProcessPage() {
                 </div>
               </div>
               <div className="step-content">
-                <p className="step-intro">Your custom apparel arrives carefully packaged and ready for your moment.</p>
+                <p className="step-intro">Your apparel shows up carefully packaged and ready to go.</p>
                 <div className="step-details-grid">
                   <div className="step-details-col">
                     <h4>What Happens</h4>
@@ -161,7 +161,7 @@ export default function ProcessPage() {
                   <div className="step-details-col">
                     <h4>Our Guarantee</h4>
                     <ul>
-                      <li>On-time delivery or we make it right</li>
+                      <li>On-time delivery, or we make it right.</li>
                       <li>Quality guarantee on all pieces</li>
                       <li>Easy reorder process for additions</li>
                     </ul>
@@ -186,7 +186,7 @@ export default function ProcessPage() {
             </div>
             <div className="faq-item">
               <h4 className="faq-question">How much does custom apparel cost?</h4>
-              <p className="faq-answer">Pricing depends on design complexity, materials, and quantity. Most projects range from $35–120 per piece depending on the brand, design, and materials. We provide a detailed quote after a quick discovery call.</p>
+              <p className="faq-answer">Pricing depends on design complexity, materials, and quantity. Most projects run $35 to $120 per piece. We put together a detailed quote after a quick discovery call.</p>
             </div>
             <div className="faq-item">
               <h4 className="faq-question">How far in advance should I order?</h4>
@@ -202,7 +202,7 @@ export default function ProcessPage() {
             </div>
             <div className="faq-item">
               <h4 className="faq-question">What if I don&apos;t know what I want?</h4>
-              <p className="faq-answer">That&apos;s what our design team is for. We&apos;ll guide you through options and make recommendations based on your event.</p>
+              <p className="faq-answer">That&apos;s literally what our design team is for. We&apos;ll walk you through options and make recommendations based on your event.</p>
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@ export const metadata = {
   description: 'Learn about Stitched Group - a design-led manufacturing company creating premium custom apparel for life\'s most meaningful moments.',
   openGraph: {
     title: 'About Us | Stitched',
-    description: 'A design-led manufacturing group creating premium custom apparel for life\'s most meaningful moments.',
+    description: 'A manufacturing group that makes premium custom apparel for the moments that matter most.',
     url: 'https://gostitched.com/about',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Stitched - Custom Apparel for Moments That Matter' }],
   },
@@ -19,7 +19,7 @@ export default function AboutPage() {
         <div className="container">
           <span className="overline">About Us</span>
           <h1 className="page-title">The Story Behind <em>Stitched</em></h1>
-          <p className="page-subtitle">A design-led manufacturing group creating premium custom apparel for life&apos;s most meaningful moments.</p>
+          <p className="page-subtitle">A manufacturing group that makes premium custom apparel for the moments that matter most.</p>
         </div>
       </section>
 
@@ -28,10 +28,10 @@ export default function AboutPage() {
           <div className="story-layout">
             <div className="story-content">
               <h2 className="section-title">Our <em>Story</em></h2>
-              <p className="story-lead">Stitched was born from a simple observation: the custom apparel industry treats every event the same.</p>
-              <p className="story-body">Whether you&apos;re ordering shirts for a wedding party or a corporate retreat, you&apos;re often stuck with the same generic options, the same cookie-cutter designs, and the same impersonal experience.</p>
-              <p className="story-body">We believed there had to be a better way. A wedding celebration deserves a different aesthetic sensibility than a tech company&apos;s team shirts. A Bar Mitzvah calls for designs that honor tradition while feeling fresh and modern. A birthday bash should feel fun and celebratory, not corporate.</p>
-              <p className="story-body">So we built Stitched — a manufacturing group with multiple specialized brands, each dedicated to a specific type of moment. Same commitment to quality, same premium materials, same expert craftsmanship. But completely different approaches to design, customer experience, and creative direction.</p>
+              <p className="story-lead">Stitched started with a simple observation: the custom apparel industry treats every event the same.</p>
+              <p className="story-body">Whether you&apos;re ordering for a wedding party or a corporate retreat, you end up with the same generic options, the same cookie-cutter designs, and the same impersonal experience.</p>
+              <p className="story-body">There had to be a better way. A wedding deserves a completely different aesthetic than a tech company&apos;s team shirts. A Bar Mitzvah calls for designs that honor tradition while still feeling modern. A birthday should feel fun and celebratory, not corporate.</p>
+              <p className="story-body">So we built Stitched: a manufacturing group with multiple specialized brands, each dedicated to a specific type of moment. Same commitment to quality. Same premium materials. Same craftsmanship. But completely different approaches to design, customer experience, and creative direction.</p>
             </div>
           </div>
         </div>
@@ -45,9 +45,9 @@ export default function AboutPage() {
           </div>
           <div className="values-grid">
             {[
-              { num: '01', title: 'Moments Matter', desc: 'Every celebration deserves apparel designed specifically for its unique character. We don\'t believe in one-size-fits-all solutions. That\'s why we built five distinct brands — so a bride shopping for getting-ready robes gets a completely different experience than a company ordering team polos. Your moment is unique, and every detail of our process reflects that.' },
-              { num: '02', title: 'Specialization Over Generalization', desc: 'Our multi-brand approach means each moment type gets dedicated expertise, aesthetic sensibility, and customer experience. A wedding brand thinks differently than a corporate brand — different designers, different materials, different creative direction. Specialization lets us go deeper instead of wider.' },
-              { num: '03', title: 'Premium Without Pretension', desc: 'Quality materials, expert craftsmanship, and thoughtful design — accessible to anyone who values doing things right. By owning the manufacturing process and cutting out middlemen, we deliver factory-direct quality at prices that make sense. High-end feel without the high-end attitude.' },
+              { num: '01', title: 'Moments Matter', desc: 'Every celebration deserves apparel designed for its unique character. We don\'t do one-size-fits-all. That\'s why we built five distinct brands. A bride shopping for getting-ready robes gets a completely different experience than a company ordering team polos. Your moment is unique, and every part of our process reflects that.' },
+              { num: '02', title: 'Specialization Over Generalization', desc: 'Our multi-brand approach means each moment type gets its own expertise, aesthetic, and customer experience. A wedding brand thinks differently than a corporate brand. Different designers, different materials, different creative direction. Specialization lets us go deeper instead of wider.' },
+              { num: '03', title: 'Premium Without Pretension', desc: 'Quality materials, expert craftsmanship, and thoughtful design. Accessible to anyone who values doing things right. We own the manufacturing process and cut out the middlemen, so you get factory-direct quality at prices that make sense. High-end feel without the high-end attitude.' },
             ].map(v => (
               <div key={v.num} className="value-card">
                 <span className="value-number">{v.num}</span>
@@ -82,9 +82,9 @@ export default function AboutPage() {
             <div>
               <h3>Meet the Founder</h3>
               <h4>Ethan Scher</h4>
-              <p>Ethan built Stitched after seeing the same problem over and over in the custom apparel industry: every event gets treated the same. A wedding party shouldn&apos;t have the same experience as a corporate team-building order.</p>
-              <p>With a background in business and a passion for design, Ethan saw an opportunity to rethink the entire model. Instead of one brand trying to serve everyone, he built five — each with its own design aesthetic, customer experience, and creative direction tailored to a specific type of moment.</p>
-              <p>Today, Ethan oversees the creative vision and manufacturing partnerships that power every Stitched brand, ensuring that each piece meets the standard of quality he set out to deliver from day one.</p>
+              <p>Ethan built Stitched after seeing the same problem play out over and over in custom apparel: every event gets treated the same. A wedding party shouldn&apos;t get the same experience as a corporate team-building order.</p>
+              <p>With a background in business and a passion for design, Ethan saw a chance to rethink the whole model. Instead of one brand trying to serve everyone, he built five. Each with its own design aesthetic, customer experience, and creative direction, all tailored to a specific type of moment.</p>
+              <p>Today, Ethan runs the creative vision and manufacturing partnerships behind every Stitched brand, making sure each piece hits the quality bar he set from day one.</p>
             </div>
           </div>
         </div>

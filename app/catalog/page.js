@@ -22,7 +22,7 @@ export default function CatalogPage() {
         <div className="container">
           <div className="imagine-more-content">
             <h2 className="section-title">This is just a fraction of what we can <em>do.</em></h2>
-            <p>We&apos;re a fully custom, cut-and-sew manufacturer. If you can imagine it, we can build it. Different fabrics, fits, colors, techniques — every project starts as a blank canvas.</p>
+            <p>We&apos;re a fully custom, cut-and-sew manufacturer. If you can imagine it, we can build it. Different fabrics, fits, colors, techniques. Every project starts as a blank canvas.</p>
             <p><strong>Have something specific in mind?</strong></p>
             <a href="/contact" className="btn btn-primary btn-large">Start Your Custom Project</a>
           </div>

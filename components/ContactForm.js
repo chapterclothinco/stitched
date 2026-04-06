@@ -108,7 +108,7 @@ export default function ContactForm() {
       </div>
       <div className="form-group full-width">
         <label htmlFor="message">Tell us about your vision</label>
-        <textarea id="message" name="message" rows="5" placeholder="Share details about your event, style preferences, and any specific ideas you have in mind..."></textarea>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us about your event, any style preferences, and ideas you have in mind..."></textarea>
       </div>
       <div className="contact-buttons">
         <button type="submit" className="btn btn-primary btn-large" disabled={submitting}>
